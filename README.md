@@ -12,8 +12,6 @@ This library consists of tools, utilities, practices and research that I am curr
 
 ⭐️ *watch and star this repo to keep up-to-date with the latest results of my research*
 
-![](/media/sci-logo.jpg)
-
 ![`./drum.code` live performance. Photo by Paulus ](/media/drumcode.jpg)
 
 ## 🥁 Performances & Publications
@@ -55,6 +53,8 @@ Hoogland, T. (2023). './drum.code'. *AIMC 2023*. Retrieved from https://aimc2023
 ## 🔋 Powered By
 
 - This project has been granted funding from [**Creative Industries Fund NL**](https://stimuleringsfonds.nl/en/)
+
+![](/media/sci-logo.jpg)
 
 ## 📝 License
 
