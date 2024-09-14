@@ -1,6 +1,8 @@
 # `./drum.code`
 
-A library of tools for hybrid drums (or instruments), with onset detection, timbre analysis, midi and osc trigger outputs, and more
+**A library of tools for hybrid drums (or instruments), with onset detection, timbre analysis, midi and osc trigger outputs, and more**
+
+[**🙏 Support me by buying me a coffee on ko-fi**](https://ko-fi.com/tmhglnd)
 
 ## 📟 About
 
