@@ -20,6 +20,21 @@ This library consists of tools, utilities, practices and research that I am curr
 - [Morph with Rafaele Andrade at Gaudeamus Muziekweek 2023](https://www.youtube.com/watch?v=nHwbq-yrC2A)
 - [Morph with Lina Bautista at NIME/Gaudeamus Muziekweek 2024](https://www.youtube.com/watch?v=SXl8asBUsng)
 
+### 📝 Cite this work
+
+Hoogland, T. (2023). './drum.code'. *AIMC 2023*. Retrieved from https://aimc2023.pubpub.org/pub/micjpv5j
+
+```bibtex
+@article{Hoogland2023drum,
+	author = {Hoogland, Timo},
+	journal = {AIMC 2023},
+	year = {2023},
+	month = {aug 29},
+	note = {https://aimc2023.pubpub.org/pub/micjpv5j},
+	publisher = {},
+	title = {./drum.code},
+}
+```
 
 ## 🔭 Goals
 
