@@ -2,7 +2,7 @@
 
 **A library of tools for hybrid drums (or instruments), with onset detection, timbre analysis, midi and osc trigger outputs, and more**
 
-[**🙏 Support me by buying me a coffee on ko-fi**](https://ko-fi.com/tmhglnd)
+<!-- [**🙏 Support me by buying me a coffee on ko-fi**](https://ko-fi.com/tmhglnd) -->
 
 ## 📟 About
 
@@ -12,7 +12,9 @@ This library consists of tools, utilities, practices and research that I am curr
 
 ⭐️ *watch and star this repo to keep up-to-date with the latest results of my research*
 
-![`./drum.code` live performance. Photo by Paulus ](media/drumcode.jpg)
+![](/media/sci-logo.jpg)
+
+![`./drum.code` live performance. Photo by Paulus ](/media/drumcode.jpg)
 
 ## 🥁 Performances & Publications
 
