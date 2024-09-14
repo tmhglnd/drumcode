@@ -6,13 +6,18 @@ A library of tools for hybrid drums (or instruments), with onset detection, timb
 
 Drumcode (stylized as `./drum.code`) is a live coding performance for human and computer. During the performance the computer acts as a co-performer playing itself by making changes in the code while listening and reacting to patterns played on the drums. On the other side the human will react to the sounds made by the computer resulting in a dialogue between the analog and digital worlds of both performers. The code is generated in real-time, based on previous programmed live coding performances and pre-coded snippets. Decisions are made via machine learning techniques trained on rhythmical patterns and tuned probabilities.
 
-[Performance of `./drum.code` at The Overkill Festival in Enschede, NL](https://youtu.be/AoOR0NR0smk?si=ljSXh_uKKaQGIodq&t=112)
-
 This library consists of tools, utilities, practices and research that I am currently working on in order to create the live performance. The project has recently been granted funding by the Creative Industries Fund in the Netherlands. Within the scope of this fund it is my goal to not only create these tools for myself, but also give workshops to drummers (and other musicians) to learn about creative coding and creating a hybrid instrument from their acoustic drums. This project is a continuation of my research in algorithmic and electronic music composition and connects in various ways with my other projects such as the [Mercury live coding environment](github.com/tmhglnd/mercury), the [Mercury Playground](github.com/tmhglnd/mercury-playground) and the [Total Serialism](github.com/tmhglnd/total-serialism) library.
 
 ⭐️ *watch and star this repo to keep up-to-date with the latest results of my research*
 
 ![`./drum.code` live performance. Photo by Paulus ](media/drumcode.jpg)
+
+## Performances & Publications
+
+- [./drum.code at The Overkill Festival in Enschede, NL](https://youtu.be/AoOR0NR0smk?si=ljSXh_uKKaQGIodq&t=112)
+- [./drum.code at the AI Music Creativity conference in Brighton, UK](https://www.youtube.com/live/d0RMUqcbhmQ?si=aTXUo32V00xjPMpJ&t=3739)
+- [Morph with Rafaele Andrade at Gaudeamus Muziekweek 2023](https://www.youtube.com/watch?v=nHwbq-yrC2A)
+- [Morph with Lina Bautista at NIME/Gaudeamus Muziekweek 2024](https://www.youtube.com/watch?v=SXl8asBUsng)
 
 ## 🔭 Goals
 
