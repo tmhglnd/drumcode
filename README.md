@@ -4,6 +4,8 @@
 
 <!-- [**🙏 Support me by buying me a coffee on ko-fi**](https://ko-fi.com/tmhglnd) -->
 
+- [Documentation](./docs/README.md)
+
 ## 📟 About
 
 Drumcode (stylized as `./drum.code`) is a live coding performance for human and computer. During the performance the computer acts as a co-performer playing itself by making changes in the code while listening and reacting to patterns played on the drums. On the other side the human will react to the sounds made by the computer resulting in a dialogue between the analog and digital worlds of both performers. The code is generated in real-time, based on previous programmed live coding performances and pre-coded snippets. Decisions are made via machine learning techniques trained on rhythmical patterns and tuned probabilities.
