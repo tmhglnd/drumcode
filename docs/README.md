@@ -1,22 +1,23 @@
 
 # `./drum.code` documentation
 
-*DISCLAIMER: This project is current in development. Please be aware that things may change rapidly and there might be bugs in the software or errors in the documentation. You are welcome to file an issue if you encounter any errors.*
+*DISCLAIMER: This project is currently in development. Please be aware that things may change rapidly and there might be bugs in the software or errors in the documentation. You are welcome to file an issue if you encounter any errors.*
 
 At the moment drumcode is being developed in Max/MSP, although I am thinking of porting to Pure Data for more accessibility.
 
 ## Table of Content
 
-A rough outline of the different type of objects in this library
+A rough outline of the different type of objects in this library:
 
-- Signal analysis
-- Time, Tempo, Density
-- Pitch, Timbre, Descriptors
-- Number Generators & Sequences
-- MIDI & OSC Output
-- Sound Output
+- [Audio Analysis](#audio-analysis)
+- [Time, Tempo, Density](#time-tempo-density)
+- [Pitch, Timbre, Descriptors](#pitch-timbre-descriptors)
+- [Utilities](#utilites)
+- [Number Generators & Sequences](#number-generators--sequences)
+- [MIDI & OSC Output](#midi--osc-output)
+- [Sound Output](#sound-output)
 
-## Signal Analysis
+## Audio Analysis
 
 ### `dc.trigger~`
 
@@ -39,6 +40,10 @@ attributes:
 - attack : the attack time for the envelope follower (default = 0.45 ms)
 - release : the release time for the envelope follower (default = 15 ms)
 - slowramp : the attack and release time for the slow envelope follower (default = 27 ms)
+
+### `dc.triggerwindow~`
+
+### `dc.display~`
 
 ## Time, Tempo, Density
 
@@ -65,19 +70,51 @@ attributes:
 
 ### `dc.speed`
 
+### `dc.tempo`
 
+### `dc.direction`
 
-### `dc.`
+## Utilites
+
+### `dc.calibrate`
+
+### `dc.slide`
+
+### `dc.gate`
+
+### `dc.inrange`
+
+### `dc.cpu`
+
+### `dc.latency`
 
 ## Pitch, Timbre, Descriptors
 
 ## Number Generators & Sequences
 
+### `dc.random`
+
+### `dc.sometimes`
+
+### `dc.every`
+
+### `dc.list.spread`
+
+### `dc.step`
+
+### `dc.scale`
+
 ## MIDI & OSC Output
+
+### `dc.midi.info`
+
+### `dc.midi.note`
+
+### `dc.midi.control`
 
 ### `dc.osc.send`
 
-Create a client connected to a specified ip-address and port number. Allowing to send osc messages from the `dc.osc.message` object to that ip and port.
+Create a client connected to a specified ip-address and port number. Allowing you to send OSC-messages from the `dc.osc.message` object to the specified ip-address and port. Only one of this object is needed in your patch per ip-address and port you want to send to. If you need more, please use the unique naming attribute to make sure the objects send to the correct location.
 
 inlets:
 1. (message) : the osc-message to send, not needed when using `dc.osc.message`
@@ -93,15 +130,19 @@ attributes:
 
 ### `dc.osc.message`
 
-Format an osc message and send the incoming value out via the `dc.osc.send` object. This object only works in combination with a dc.osc.send in the patch. Specify the osc-address pattern as an argument.
+Format an OSC-message and send the incoming value out via the `dc.osc.send` object. This object only works in combination with the dc.osc.send in the patch. Specify the osc-address pattern as an argument.
 
 inlets:
-1. (number) - send the incoming number as osc message
+1. (number) - send the incoming number as OSC-message
 
 arguments:
-- osc-address - set the osc message address (default = /unnamed)
+- osc-address - set the OSC-message address (default = /unnamed)
 
 attributes:
 - name - bind to a named dc.osc.send (optional)
 
 ## Sound Output
+
+### `dc.bleep~`
+
+### `dc.synth~`
