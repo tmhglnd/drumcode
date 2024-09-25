@@ -70,6 +70,20 @@ attributes/flags:
 
 ### `dc.speed`
 
+Get the speed "amount" as a floating point number between 0 and 1 from a simple average over a history of time millisecond values. The range is calculated from the default range 40 to 1000 milliseconds.
+
+inlets:
+1. (trigger)
+2. (number) - the fastest speed in milliseconds (default = 40), maps to 1
+3. (number) - the slowest speed in milliseconds (default = 1000), maps to 0
+
+arguments:
+- (number) - the fastest speed in milliseconds (default = 40), maps to 1
+- (number) - the slowest speed in milliseconds (default = 1000), maps to 0
+
+attributes/flages:
+- history : the amount of numbers in the averaging, (default = 4, minimum = 2, maximum = 256)
+
 ### `dc.tempo`
 
 ### `dc.direction`

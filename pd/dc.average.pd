@@ -7,15 +7,16 @@
 #X obj 59 262 zl.sum;
 #X obj 59 59 inlet;
 #X obj 59 100 route clear;
-#X obj 159 139 clip 2 256;
-#X obj 159 100 args;
-#X obj 217 100 inlet;
+#X obj 159 179 clip 2 256;
+#X obj 159 140 args;
+#X obj 217 140 inlet;
 #X text 103 58 1 (number) average this number;
-#X text 261 99 2 (number) history size (default = 4 \, min = 2 \, max = 256), f 28;
+#X text 261 139 2 (number) history size (default = 4 \, min = 2 \, max = 256), f 28;
 #X obj 59 353 outlet;
 #X text 105 351 (number) the rolling average;
 #X text 498 58 dc.average;
 #X text 498 96 Compute a rolling average from the incoming number over a history of numbers. The size of the history can be adjusted \, but the default is 4, f 28;
+#X obj 159 100 loadbang;
 #X connect 0 0 1 0;
 #X connect 1 0 0 1;
 #X connect 1 0 4 0;
@@ -30,3 +31,4 @@
 #X connect 8 0 1 1;
 #X connect 9 0 8 0;
 #X connect 10 0 8 0;
+#X connect 17 0 9 0;
