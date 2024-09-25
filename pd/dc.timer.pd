@@ -5,9 +5,9 @@
 #X obj 54 184 - 0;
 #X obj 54 226 outlet;
 #X text 259 103 Report the time in milliseconds elapsed between two triggers received at the input, f 31;
-#X text 101 225 (float) time output;
-#X text 101 58 (bang) trigger input;
 #X text 259 58 dc.timer;
+#X text 101 58 1 (bang) trigger input;
+#X text 101 225 (float) time output;
 #X connect 0 0 1 1;
 #X connect 1 0 2 0;
 #X connect 2 0 3 1;

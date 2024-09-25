@@ -63,9 +63,9 @@ inlets:
 2. (number) the wait time untill hit counts are reported, (default = 250ms, 8th note at 120bpm)
 
 arguments:
-- (number) : the wait time untill hit counts are reported, (default = 250ms, 8th note at 120bpm)
+- (number) the wait time untill hit counts are reported, (default = 250ms, 8th note at 120bpm)
 
-attributes:
+attributes/flags:
 - threshold : minimum hits necessary for reporting the output, (default = 1)
 
 ### `dc.speed`
@@ -80,7 +80,16 @@ attributes:
 
 ### `dc.slide`
 
-### `dc.gate`
+### `dc.thresh`
+
+Output the incoming value to the left when it is greater than the set threshold (minimum value), else output it to the right.
+
+inlets:
+1. (number) input to gate
+2. (number) gate threshold
+
+arguments:
+- (number) gate threshold (default = 0)
 
 ### `dc.inrange`
 
@@ -88,12 +97,12 @@ Output the incoming value if it is in the range of the low and high given value.
 
 inlets:
 1. (number) is in range?
-2. (number) lower limit for range
-3. (number) upper limit for range
+2. (number) lower limit for range (default = 0)
+3. (number) upper limit for range (default = 127)
 
 arguments:
-- (number) lower limit for range
-- (number) upper limit for range
+- (number) lower limit for range (default = 0)
+- (number) upper limit for range (default = 127)
 
 ### `dc.cpu`
 
