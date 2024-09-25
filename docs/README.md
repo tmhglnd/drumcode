@@ -80,9 +80,20 @@ attributes/flags:
 
 ### `dc.slide`
 
+### `dc.average`
+
+Compute a rolling average from the incoming number over a history of numbers. The size of the history can be adjusted, but the default is 4.
+
+inlets:
+1. (number) average this number
+2. (number) history size (default = 4, min = 2, max = 256)
+
+messages:
+- clear - clear the history to reset the average
+
 ### `dc.thresh`
 
-Output the incoming value to the left when it is greater than the set threshold (minimum value), else output it to the right.
+Output the incoming value to the left when it is greater or equal to the set threshold (minimum value), else output it to the right.
 
 inlets:
 1. (number) input to gate
