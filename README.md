@@ -20,19 +20,19 @@ This library consists of tools, utilities, practices and research that I am curr
 
 This library runs in PureData (0.55.0+) or PlugData (v0.9.2+). If you're a first time use I recommend you install [PlugData](https://plugdata.org/download.html)
 
-1. `Click Code > Download ZIP`
+1. `Click Code > Download ZIP`, Unzip folder in `/Documents/plugdata/externals` and rename the folder to `drumcode`.
 
-2. `Unzip folder in /Documents/plugdata/externals`
+OR (for advanced git users:)
 
-3. Rename the folder to `drumcode` if necessary (sometimes when downloading it is called `drumcode-main`).
+1. `$ cd Documents/Pd/externals`, `$ git clone https://github.com/tmhglnd/drumcode.git`
 
-4. Open PlugData and start a `new patch`. Place the following object in the patch:
+2. Open PlugData and start a `new patch`
 
-5. `[declare -path drumcode]`
+3. Place the following object in the patch: `[declare -path drumcode]`
 
-6. Create an object to check if it is working, for example `[dc.timer]`
+4. Create an object to check if it is working, for example `[dc.timer]`
 
-7. Open the `drumcode-objects-overview.pd` to get an overview of available objects.
+Open the `drumcode-objects-overview.pd` to get an overview of available objects.
 
 ## 🥁 Performances & Publications
 
