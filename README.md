@@ -6,15 +6,33 @@
 
 - [Documentation](./docs/README.md)
 
+⭐️ **watch and star this repo to keep up-to-date with the latest results of my research**
+
 ## 📟 About
 
 Drumcode (stylized as `./drum.code`) is a live coding performance for human and computer. During the performance the computer acts as a co-performer playing itself by making changes in the code while listening and reacting to patterns played on the drums. On the other side the human will react to the sounds made by the computer resulting in a dialogue between the analog and digital worlds of both performers. The code is generated in real-time, based on previous programmed live coding performances and pre-coded snippets. Decisions are made via machine learning techniques trained on rhythmical patterns and tuned probabilities.
 
 This library consists of tools, utilities, practices and research that I am currently working on in order to create the live performance. The project has recently been granted funding by the Creative Industries Fund in the Netherlands. Within the scope of this fund it is my goal to not only create these tools for myself, but also give workshops to drummers (and other musicians) to learn about creative coding and creating a hybrid instrument from their acoustic drums. This project is a continuation of my research in algorithmic and electronic music composition and connects in various ways with my other projects such as the [Mercury live coding environment](https://github.com/tmhglnd/mercury), the [Mercury Playground](https://github.com/tmhglnd/mercury-playground) and the [Total Serialism](https://github.com/tmhglnd/total-serialism) library.
 
-⭐️ *watch and star this repo to keep up-to-date with the latest results of my research*
-
 ![`./drum.code` live performance. Photo by Paulus ](/media/drumcode.jpg)
+
+## 🚀 Install
+
+This library runs in PureData (0.55.0+) or PlugData (v0.9.2+). If you're a first time use I recommend you install [PlugData](https://plugdata.org/download.html)
+
+1. `Click Code > Download ZIP`
+
+2. `Unzip folder in /Documents/plugdata/externals`
+
+3. Rename the folder to `drumcode` if necessary (sometimes when downloading it is called `drumcode-main`).
+
+4. Open PlugData and start a `new patch`. Place the following object in the patch:
+
+5. `[declare -path drumcode]`
+
+6. Create an object to check if it is working, for example `[dc.timer]`
+
+7. Open the `drumcode-objects-overview.pd` to get an overview of available objects.
 
 ## 🥁 Performances & Publications
 
