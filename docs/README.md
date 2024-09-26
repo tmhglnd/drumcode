@@ -65,7 +65,7 @@ inlets:
 arguments:
 - (number) the wait time untill hit counts are reported, (default = 250ms, 8th note at 120bpm)
 
-attributes/flags:
+attributes:
 - threshold : minimum hits necessary for reporting the output, (default = 1)
 
 ### `dc.speed`
@@ -81,7 +81,7 @@ arguments:
 - (number) - the fastest speed in milliseconds (default = 40), maps to 1
 - (number) - the slowest speed in milliseconds (default = 1000), maps to 0
 
-attributes/flages:
+attributes:
 - history : the amount of numbers in the averaging, (default = 4, minimum = 2, maximum = 256)
 
 ### `dc.tempo`
@@ -93,6 +93,18 @@ attributes/flages:
 ### `dc.calibrate`
 
 ### `dc.slide`
+
+Create a slide (ramp down), of values that slide back to a ground value (usually 0) over time, but immediately shoots up when an incoming value is received greater than that ground value. Slides back logarithmically.
+
+inlets:
+1. (number) input a number to create a slide for
+2. (number) slide length 0-1
+
+arguments:
+- (number) slide length 0-1
+
+attributes:
+- interval : set the time interval in milliseconds for reporting the output (default = 10)
 
 ### `dc.average`
 
