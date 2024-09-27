@@ -183,7 +183,7 @@ arguments order:
 - (number) the port to send to (default = 4880)
 
 attributes:
-- name - unique name within patcher to bind other dc.osc.message objects to (optional)
+- name : unique name within patcher to bind other dc.osc.message objects to (optional)
 
 ### `dc.osc.message`
 
@@ -196,7 +196,7 @@ arguments order: order:
 - (osc-address) - set the OSC-message address (default = /undefined)
 
 attributes:
-- name - bind to a named dc.osc.send (optional)
+- name : bind to a named dc.osc.send (optional)
 
 ## Sound Output
 
