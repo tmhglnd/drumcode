@@ -29,7 +29,7 @@ inlets:
 3. (number) sensitivity range 0 - 1 (default = 0.3)
 4. (number) gate below which no triggers are detected -60 - 0 (default = -60dB)
 
-arguments:
+arguments order:
 - (number) sensitivity 0 - 1 (default = 0.5)
 - (number) sensitivity range 0 - 1 (default = 0.3)
 
@@ -62,7 +62,7 @@ inlets:
 1. (trigger) count the triggers
 2. (number) the wait time untill hit counts are reported, (default = 250ms, 8th note at 120bpm)
 
-arguments:
+arguments order:
 - (number) the wait time untill hit counts are reported, (default = 250ms, 8th note at 120bpm)
 
 attributes:
@@ -77,7 +77,7 @@ inlets:
 2. (number) - the fastest speed in milliseconds (default = 40), maps to 1
 3. (number) - the slowest speed in milliseconds (default = 1000), maps to 0
 
-arguments:
+arguments order:
 - (number) - the fastest speed in milliseconds (default = 40), maps to 1
 - (number) - the slowest speed in milliseconds (default = 1000), maps to 0
 
@@ -100,7 +100,7 @@ inlets:
 1. (number) input a number to create a slide for
 2. (number) slide length 0-1
 
-arguments:
+arguments order:
 - (number) slide length 0-1
 
 attributes:
@@ -125,7 +125,7 @@ inlets:
 1. (number) input to gate
 2. (number) gate threshold
 
-arguments:
+arguments order:
 - (number) gate threshold (default = 0)
 
 ### `dc.inrange`
@@ -137,7 +137,7 @@ inlets:
 2. (number) lower limit for range (default = 0)
 3. (number) upper limit for range (default = 127)
 
-arguments:
+arguments order:
 - (number) lower limit for range (default = 0)
 - (number) upper limit for range (default = 127)
 
@@ -178,7 +178,7 @@ inlets:
 2. (message) the ip-address to send to (default = 127.0.0.1 / localhost)
 3. (number) the port to send to (default = 4880)
 
-arguments:
+arguments order:
 - (message) the ip-address to send to (default = 127.0.0.1 / localhost)
 - (number) the port to send to (default = 4880)
 
@@ -187,13 +187,13 @@ attributes:
 
 ### `dc.osc.message`
 
-Format an OSC-message and send the incoming value out via the `dc.osc.send` object. This object only works in combination with the dc.osc.send in the patch. Specify the osc-address pattern as an argument.
+Format an OSC-message from the incoming value and send out via the `[dc.osc.send]` object. This object only works in combination with the dc.osc.send in your patch. Specify the osc-address pattern as an argument. You can use a unique -name if you prefer.
 
 inlets:
 1. (number) - send the incoming number as OSC-message
 
-arguments:
-- osc-address - set the OSC-message address (default = /unnamed)
+arguments order: order:
+- (osc-address) - set the OSC-message address (default = /undefined)
 
 attributes:
 - name - bind to a named dc.osc.send (optional)
