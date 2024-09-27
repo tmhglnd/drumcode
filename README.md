@@ -77,6 +77,23 @@ Hoogland, T. (2023). './drum.code'. *AIMC 2023*. Retrieved from https://aimc2023
 
 ![](/media/sci-logo.jpg)
 
+## ✨ Inspiration & Reading
+
+For this project I've found inspiration in many different places, from different artists, coders, musicians, papers, you name it.
+
+- [The Fluid Corpus Manipulation Project](https://www.flucoma.org/) 
+	- Machine Learning/Listening, Software Library
+- [Jojo Mayer - Nerve](https://www.youtube.com/watch?v=SIahbUYxdfE) 
+	- Drums, Electronics, Live Band
+- [Yaxu & Rephlex - Canute](https://www.youtube.com/watch?v=uAq4BAbvRS4) 
+	- Electronic Drums, Live Coding
+- [Graham Dunning - Mechanical Techno](https://www.youtube.com/watch?v=HG8qR75R-as) 
+	- Triggers, DIY Instrument
+- [Owen Green & Rodrigo Constanza - Talk Play Talk](https://youtu.be/aslEJBB9iT4?si=ahGDTmu7IG6gE6Mf)
+	- Live electronics, Hybrid Instrument, Machine Listening
+- [SP-Tools](https://rodrigoconstanzo.com/2022/07/sp-tools-machine-learning-tools-for-drums-and-percussion-alpha/)
+	- Machine Learning, Software Library
+
 ## 📝 License
 
 [The GNU GPL v.3 License](https://choosealicense.com/licenses/gpl-3.0/)

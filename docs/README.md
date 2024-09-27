@@ -92,6 +92,17 @@ attributes:
 
 ### `dc.calibrate`
 
+### `dc.wait`
+
+Limit the speed of incoming triggers/numbers, holding them of for a specific amount of time. After the first input is recieved, a gate closes temporarily. Until the gate is opened no input will be passed through. The gate opens after the specified waiting time in milliseconds.
+
+inlets:
+1. (trigger/number) incoming value to limit in speed
+2. (number) set waiting time in milliseconds
+
+arguments order:
+- (number) set waiting time in milliseconds
+
 ### `dc.slide`
 
 Create a slide (ramp down), of values that slide back to a ground value (usually 0) over time, but immediately shoots up when an incoming value is received greater than that ground value. Slides back logarithmically.
@@ -117,7 +128,7 @@ inlets:
 messages:
 - clear - clear the history to reset the average
 
-### `dc.thresh`
+### `dc.gate`
 
 Output the incoming value to the left when it is greater or equal to the set threshold (minimum value), else output it to the right.
 
@@ -167,7 +178,22 @@ arguments order:
 
 ### `dc.midi.note`
 
+Send a MIDI note to an external platform to trigger sounds. This can be a DAW, an external hardware Synth, or something else. Choose the devices you want to output to via the MIDI Preferences in Pd.
+
+inlets:
+1. (number/trigger) trigger the MIDI note (default = 60)
+2. (number) set the MIDI velocity 1-127 for note-on (default = 120)
+3. (number) set the note duration in milliseconds (default = 250)
+4. (number) set the MIDI channel to send to (default = All)
+
+arguments:
+- (number) set the MIDI velocity 1-127 for note-on (default = 120)
+- (number) set the note duration in milliseconds (default = 250)
+- (number) set the MIDI channel to send to (default = All)
+
 ### `dc.midi.control`
+
+
 
 ### `dc.osc.send`
 
