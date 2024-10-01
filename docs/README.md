@@ -41,7 +41,16 @@ attributes:
 - release : the release time for the envelope follower (default = 15 ms)
 - slowramp : the attack and release time for the slow envelope follower (default = 27 ms)
 
-### `dc.triggerwindow~`
+### `dc.trigger.frame~`
+
+Capture a short frame of sound when the trigger is detected. This short frame of sound can be used to analyse for various sound descriptors such as pitch, loudness, spectral centroid, noisiness, timbre (mfcc) and more. Connect the trigger to the right inlet and connect the sound to the left inlet.
+
+inlets:
+1. (signal) capture a short piece of incoming signal
+2. (trigger) detected trigger from drum.trigger~ triggers the frame output
+
+arguments order:
+- (number) framesize in samples (default = 256, min = 8, max = 22050)
 
 ### `dc.display~`
 
@@ -91,6 +100,16 @@ attributes:
 ## Utilites
 
 ### `dc.calibrate`
+
+Automatically rescale the incoming values to an output range based on the highest and lowest values received. This range auto-adapts when higher or lower numbers are received. The output range is 0-1 by default but can be adjust with arguments. The output-range is also clipped between the lowest and highest value of the set range
+
+inlets:
+1. (number) incoming value to automatically rescale
+2. (number) start/stop calibration/autoscaling
+
+arguments:
+- (number) - lower output range (default = 0)
+- (number) - higher output range (default = 1)
 
 ### `dc.wait`
 
