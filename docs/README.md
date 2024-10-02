@@ -173,13 +173,26 @@ arguments order:
 
 ### `dc.cpu`
 
-### `dc.latency`
+### `dc.latency` 
 
 ## Pitch, Timbre, Descriptors
 
 ## Number Generators & Sequences
 
 ### `dc.random`
+
+Generate random values within a minimum and maximum range. The low and high values are included. You can specify a default range with "amplitude"/"amp", "velocity"/"vel", "note"/"pitch", "duration"/"dur" to quickly get some output in a desired range. Otherwise specify the low, high range, and if the output should be integer (1, default) or float (0)
+
+inlets:
+1. (trigger) trigger the output of a random number
+2. (number) the lowest possible value (default = 36)
+3. (number) the highest possible value (default = 72)
+
+arguments:
+- (number) the lowest possible value (default = 36)
+	- or: (symbol) a single word to set the range (note, velocity, duration, amplitude)
+- (number) the highest possible value (default = 72)
+- (on/off) the random numbers are only whole numbers (default = true (1))
 
 ### `dc.sometimes`
 
@@ -188,6 +201,15 @@ arguments order:
 ### `dc.list.spread`
 
 ### `dc.step`
+
+Step through the values of a list for every time the object receives a trigger. The list can be defined as arguments or via the right inlet. A number can be send to go to a specific step as well. Changing the list resets the counter to the beginning.
+
+inlets:
+1. (trigger/number) next step in sequence, or go to number
+2. (list) input a list of numbers for the sequence
+
+arguments:
+- (number) as many numbers you want to have part of the list
 
 ### `dc.scale`
 
