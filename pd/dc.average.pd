@@ -14,9 +14,9 @@
 #X text 261 139 2 (number) history size (default = 4 \, min = 2 \, max = 256), f 28;
 #X obj 59 353 outlet;
 #X text 105 351 (number) the rolling average;
-#X text 498 58 dc.average;
-#X text 498 96 Compute a rolling average from the incoming number over a history of numbers. The size of the history can be adjusted \, but the default is 4, f 28;
+#X text 479 96 Compute a rolling average from the incoming number over a history of numbers. The size of the history can be adjusted \, but the default is 4, f 40;
 #X obj 159 100 loadbang;
+#X obj 479 59 cnv 15 283 29 empty empty dc.average 20 13 0 20 #00deb1 #ffffff 0;
 #X connect 0 0 1 0;
 #X connect 1 0 0 1;
 #X connect 1 0 4 0;
@@ -31,4 +31,4 @@
 #X connect 8 0 1 1;
 #X connect 9 0 8 0;
 #X connect 10 0 8 0;
-#X connect 17 0 9 0;
+#X connect 16 0 9 0;
