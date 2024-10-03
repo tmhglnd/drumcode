@@ -57,6 +57,8 @@
 #X obj 940 849 print;
 #X obj 862 593 fluid.bufstats -select mean;
 #X obj 862 421 fluid.bufspectralshape -numchans 1 -select centroid flatness -fftsettings 256 32 -1 -blocking 1, f 82;
+#X obj 432 170 tgl 25 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #000000 0 1;
+#X obj 431 209 switch~;
 #X connect 0 0 1 0;
 #X connect 1 0 5 0;
 #X connect 1 0 16 0;
@@ -105,3 +107,4 @@
 #X connect 52 2 41 0;
 #X connect 54 0 43 0;
 #X connect 55 0 54 0;
+#X connect 56 0 57 0;
