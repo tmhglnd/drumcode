@@ -41,7 +41,7 @@
 #X msg 441 1098 /trigger/speed \$1;
 #X text 460 1160 send Open Sound Control (OSC) messages over the network or locally, f 24;
 #X text 441 1062 format an OSC message like so:;
-#X text 459 935 use this object to send osc "wireless" to the dc.osc.send object, f 33;
+#X text 460 927 use this object to send osc "wireless" to the dc.osc.send object, f 24;
 #X obj 441 977 dc.osc.message /slider/low;
 #X obj 441 1213 dc.osc.send localhost 4880;
 #X obj 178 600 dc.trigger~;
@@ -66,6 +66,11 @@
 #X msg 39 1305 60;
 #X obj 39 1340 dc.midi.note 120 250;
 #X text 75 1275 play a MIDI note from a number (pitch) \, with velocity and duration, f 24;
+#X obj 682 977 dc.taptempo;
+#X obj 682 942 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #000000;
+#X floatatom 682 1013 5 0 0 0 - - - 12;
+#X text 727 941 get the estimated BPM;
+#X text 727 1012 outputs after 2nd click;
 #X connect 1 0 14 0;
 #X connect 5 0 1 0;
 #X connect 6 0 8 0;
@@ -92,3 +97,5 @@
 #X connect 47 0 41 0;
 #X connect 51 0 41 1;
 #X connect 60 0 61 0;
+#X connect 63 0 65 0;
+#X connect 64 0 63 0;
