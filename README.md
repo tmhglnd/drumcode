@@ -19,19 +19,34 @@ This library consists of tools, utilities, practices and research that I am curr
 
 ## 🚀 Install
 
-This library runs in PureData (0.55.0+) or PlugData (v0.9.2+). If you're a first time use I recommend you install [PlugData](https://plugdata.org/download.html)
+This library runs in PureData (0.55.0+) or PlugData (v0.9.2+). If you're a first time user I recommend you install [**PlugData**](https://plugdata.org/download.html) first.
 
-1. `Click Code > Download ZIP`, Unzip folder in `/Documents/plugdata/externals` and rename the folder to `drumcode`.
+- `Click Code > Download ZIP`, Unzip folder in `/Documents/plugdata/externals` and rename the folder to `drumcode`.
 
 OR (for advanced git users:)
 
-1. `$ cd Documents/Pd/externals`, `$ git clone https://github.com/tmhglnd/drumcode.git`
+- `$ cd Documents/Pd/externals`, `$ git clone https://github.com/tmhglnd/drumcode.git`
 
-2. Open PlugData and start a `new patch`
+### Dependencies
 
-3. Place the following object in the patch: `[declare -path drumcode]`
+The drumcode library uses the following dependencies, which you will have to download and install separately before starting to use drumcode.
 
-4. Create an object to check if it is working, for example `[dc.timer]`
+- [Cyclone](https://github.com/porres/pd-cyclone/)
+	- Included in PlugData by default, no need for installing
+	- When using PureData, install via `Help > Find Externals`
+- [ELSE](https://github.com/porres/pd-else/)
+	- Included in PlugData by default, no need for installing
+	- When using PureData, install via `Help > Find Externals`
+- [Fluid Corpus Manipulation](https://www.flucoma.org/download/)
+	- Download the *Pure Data Binaries*
+	- Unpack the `.dmg` `.zip` or `.tar.gz` (depending on your OS)
+	- Place the `FluidCorpusManipulation` folder in `/Documents/plugdata/externals`
+
+### Usage
+
+1. Open PlugData and start a `new patch`
+2. Place the following object in the patch: `[declare -path drumcode]`
+3. Create an object to check if it is working. Objects are typed as `[dc.objectNameHere]`
 
 Open the `drumcode-objects-overview.pd` to get an overview of available objects.
 
