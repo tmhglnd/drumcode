@@ -19,13 +19,13 @@ This library consists of tools, utilities, practices and research that I am curr
 
 ## 🚀 Install
 
-This library runs in PureData (0.55.0+) or PlugData (v0.9.2+). If you're a first time user I recommend you install [**PlugData**](https://plugdata.org/download.html) first.
+This library runs in PureData (0.55.0+) or PlugData (v0.9.2+). If you're a first time user I recommend you install [**PlugData**](https://plugdata.org/download.html) first, after that do:
 
-- `Click Code > Download ZIP`, Unzip folder in `/Documents/plugdata/externals` and rename the folder to `drumcode`.
+- [**Download `drumcode`**](https://github.com/tmhglnd/drumcode/archive/refs/heads/main.zip), Unzip folder and move to `/Documents/plugdata/externals`, rename the folder to `drumcode`.
 
-OR (for advanced git users:)
+OR (*for advanced git users:*)
 
-- `$ cd Documents/Pd/externals`, `$ git clone https://github.com/tmhglnd/drumcode.git`
+- `$ cd ~/Documents/plugdata/externals`, `$ git clone https://github.com/tmhglnd/drumcode.git`
 
 ### Dependencies
 
