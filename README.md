@@ -31,16 +31,14 @@ OR (*for advanced git users:*)
 
 The drumcode library uses the following dependencies, which you will have to download and install separately before starting to use drumcode.
 
-- [Cyclone](https://github.com/porres/pd-cyclone/)
-	- Included in PlugData by default, no need for installing
-	- When using PureData, install via `Help > Find Externals`
-- [ELSE](https://github.com/porres/pd-else/)
-	- Included in PlugData by default, no need for installing
-	- When using PureData, install via `Help > Find Externals`
 - [Fluid Corpus Manipulation](https://www.flucoma.org/download/)
 	- Download the *Pure Data Binaries*
 	- Unpack the `.dmg` `.zip` or `.tar.gz` (depending on your OS)
 	- Place the `FluidCorpusManipulation` folder in `/Documents/plugdata/externals`
+- [Cyclone](https://github.com/porres/pd-cyclone/) (PureData only! included in PlugData by default)
+	- When using PureData, install via `Help > Find Externals`
+- [ELSE](https://github.com/porres/pd-else/) (PureData only! included in PlugData by default)
+	- When using PureData, install via `Help > Find Externals`
 
 ### Usage
 
