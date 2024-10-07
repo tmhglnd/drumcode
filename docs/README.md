@@ -95,7 +95,12 @@ attributes:
 
 ### `dc.tempo`
 
-### `dc.direction`
+A simple taptempo feature. Input a trigger. If the triggers are received within the range of 40 to 200 BPM the estimated tempo is output. This is done over a rolling average of 6 beats. The rolling average is reset when the first incoming value is too high or too low, allowing you to wait and then retrigger the tempo. The taptempo expects a tempo in quarternotes and outputs BPM in quarternotes.
+
+inlets:
+1. (trigger) estimate the tempo
+
+<!-- ### `dc.direction` -->
 
 ## Utilites
 
@@ -171,9 +176,9 @@ arguments order:
 - (number) lower limit for range (default = 0)
 - (number) upper limit for range (default = 127)
 
-### `dc.cpu`
+<!-- ### `dc.cpu` -->
 
-### `dc.latency` 
+<!-- ### `dc.latency`  -->
 
 ## Pitch, Timbre, Descriptors
 
@@ -194,11 +199,11 @@ arguments:
 - (number) the highest possible value (default = 72)
 - (on/off) the random numbers are only whole numbers (default = true (1))
 
-### `dc.sometimes`
+<!-- ### `dc.sometimes` -->
 
-### `dc.every`
+<!-- ### `dc.every` -->
 
-### `dc.list.spread`
+<!-- ### `dc.list.spread` -->
 
 ### `dc.step`
 
@@ -211,11 +216,11 @@ inlets:
 arguments:
 - (number) as many numbers you want to have part of the list
 
-### `dc.scale`
+<!-- ### `dc.scale` -->
 
 ## MIDI & OSC
 
-### `dc.midi.info`
+<!-- ### `dc.midi.info` -->
 
 ### `dc.note.scale`
 
@@ -245,9 +250,7 @@ arguments:
 - (number) set the note duration in milliseconds (default = 250)
 - (number) set the MIDI channel to send to (default = All)
 
-### `dc.midi.control`
-
-
+<!-- ### `dc.midi.control` -->
 
 ### `dc.osc.send`
 
