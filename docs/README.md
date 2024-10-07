@@ -213,13 +213,26 @@ arguments:
 
 ### `dc.scale`
 
-## MIDI & OSC Output
+## MIDI & OSC
 
 ### `dc.midi.info`
 
-### `dc.midi.note`
+### `dc.note.scale`
 
-Send a MIDI note to an external platform to trigger sounds. This can be a DAW, an external hardware Synth, or something else. Choose the devices you want to output to via the MIDI Preferences in Pd.
+Map the incoming MIDI note to a note in a specified scale with a specified root. Scale name and root name can be specified as argument or via the 2nd and 3rd inlets. Available scales: major, minor, minor_harmonic, minor_melodic, dorian, phrygian, lydian, mixolydian, locrian, major_pentatonic, minor_pentatonic, chromatic. Default is major c.
+
+inlets:
+1. (number) MIDI pitch to map to scale
+2. (message) scale name for mapping
+3. (message) root name for transposing
+
+arguments:
+- (message) scale name for mapping
+- (message) root name for transposing
+
+### `dc.note.out`
+
+Send a MIDI-note to an external platform to trigger sounds. This can be a DAW, an external hardware Synth, or something else. Choose the devices you want to output to via the MIDI Preferences in Pd.
 
 inlets:
 1. (number/trigger) trigger the MIDI note (default = 60)
