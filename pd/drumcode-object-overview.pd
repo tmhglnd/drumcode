@@ -81,6 +81,12 @@
 #X obj 682 977 dc.tempo;
 #X text 229 634 BANG!;
 #X text 279 598 <- detect triggers!;
+#X obj 441 1340 dc.step 60 63 67 72;
+#X obj 441 1292 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #000000;
+#X obj 441 1379 nbx 4 18 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10 #e4e4e4 #000000 #000000 0 256;
+#X msg 583 1292 72 77 79;
+#X text 473 1291 step through a list of numbers, f 15;
+#X text 583 1316 replace with new numbers, f 13;
 #X connect 1 0 14 0;
 #X connect 5 0 1 0;
 #X connect 6 0 8 0;
@@ -114,3 +120,6 @@
 #X connect 66 0 69 0;
 #X connect 66 0 68 0;
 #X connect 75 0 60 0;
+#X connect 78 0 80 0;
+#X connect 79 0 78 0;
+#X connect 81 0 78 1;
