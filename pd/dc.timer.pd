@@ -4,7 +4,7 @@
 #X obj 59 139 timer;
 #X obj 59 104 t b b;
 #X obj 59 177 outlet (number) time output;
-#X obj 59 59 inlet (trigger) trigger input;
+#X obj 59 59 inlet (bang) trigger input;
 #X connect 2 0 4 0;
 #X connect 3 0 2 0;
 #X connect 3 1 2 1;
