@@ -1,4 +1,5 @@
 #N canvas 827 239 527 327 12;
+#X declare -path else;
 #X obj 99 183 delay 250;
 #X obj 59 139 t b b;
 #X obj 59 307 count;
@@ -13,6 +14,7 @@
 #X obj 59 59 inlet (bang) trigger input;
 #X obj 112 422 outlet (number) hits counted;
 #X obj 208 139 inlet (number) wait time in ms;
+#X obj 428 260 declare -path else;
 #X connect 0 0 5 0;
 #X connect 1 0 2 0;
 #X connect 1 1 0 0;

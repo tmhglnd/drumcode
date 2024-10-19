@@ -1,4 +1,5 @@
 #N canvas 827 239 731 589 12;
+#X declare -path FluidCorpusManipulation;
 #X obj 59 515 fluid.ampfeature~ -fastrampup 20 -fastrampdown 690 -slowrampup 1215 -slowrampdown 1215 -floor -60 -highpassfreq 1700;
 #X obj 59 951 thresh~;
 #X obj 59 991 edge~;
@@ -35,11 +36,12 @@
 #X msg 242 284 0.5 0.3;
 #X obj 187 249 t b b;
 #X obj 59 60 inlet~ (signal) detect incoming triggers on this sound;
-#X text 168 97;
+#X text 168 97 comment;
 #X obj 125 98 inlet (number) : sensitivity of the trigger detection 0 - 1 (default = 0.5);
 #X obj 187 147 inlet (number) : sensitivity range of the trigger detection 0 - 1 (default = 0.3), f 64;
 #X obj 323 205 inlet (number) : gate below which no triggers are detected -60 - 0 (default = -60dB), f 40;
 #X obj 59 1067 outlet (bang) trigger output when detected;
+#X obj 680 284 declare -path FluidCorpusManipulation;
 #X connect 0 0 32 0;
 #X connect 1 0 2 0;
 #X connect 2 0 24 0;

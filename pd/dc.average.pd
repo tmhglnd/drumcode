@@ -1,4 +1,6 @@
 #N canvas 827 239 527 327 12;
+#X declare -path else;
+#X declare -path cyclone;
 #X obj 59 182 zl.join;
 #X obj 59 221 zl.slice 4;
 #X msg 59 140 zlclear;
@@ -14,6 +16,8 @@
 #X obj 59 59 inlet (number) average this number;
 #X obj 216 125 inlet (number) history size (default = 4 \, min = 2 \, max = 256), f 29;
 #X obj 59 353 outlet (number) the rolling average;
+#X obj 479 179 declare -path else;
+#X obj 479 215 declare -path cyclone;
 #X connect 0 0 1 0;
 #X connect 1 0 0 1;
 #X connect 1 0 4 0;

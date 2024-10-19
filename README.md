@@ -43,7 +43,7 @@ The drumcode library uses the following dependencies, which you will have to dow
 ### Usage
 
 1. Open PlugData and start a `new patch`
-2. Place the following object in the patch: `[declare -path drumcode]`
+2. Place the following object in the patch: `[declare -path drumcode/pd]`
 3. Create an object to check if it is working. Objects are typed as `[dc.objectNameHere]`
 
 Open the `drumcode-objects-overview.pd` to get an overview of available objects.

@@ -1,4 +1,6 @@
 #N canvas 827 239 527 327 12;
+#X declare -path else;
+#X declare -path cyclone;
 #X obj 125 171 metro 10;
 #X obj 125 109 loadbang;
 #X msg 128 140 1;
@@ -26,6 +28,8 @@
 #X obj 59 58 inlet (number) input a number to create a slide for;
 #X obj 296 109 inlet (number) slide amount 0-1;
 #X obj 59 598 outlet (number) slide continuous output;
+#X obj 536 257 declare -path else;
+#X obj 536 293 declare -path cyclone;
 #X connect 0 0 11 0;
 #X connect 1 0 2 0;
 #X connect 2 0 0 0;

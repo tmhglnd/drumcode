@@ -1,4 +1,6 @@
 #N canvas 827 239 527 327 12;
+#X declare -path else;
+#X declare -path cyclone;
 #X obj 59 303 random 1000;
 #X obj 59 339 / 999;
 #X obj 59 375 scale 0 1 36 72;
@@ -30,6 +32,8 @@
 #X obj 256 303 inlet (number) the lowest possible value (default = 36);
 #X obj 269 339 inlet (number) the highest possible value (default = 72);
 #X obj 59 552 outlet (number) the randomly generated number;
+#X obj 416 419 declare -path else;
+#X obj 416 455 declare -path cyclone;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 14 1;

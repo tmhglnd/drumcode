@@ -1,4 +1,6 @@
 #N canvas 827 239 527 327 12;
+#X declare -path else;
+#X declare -path cyclone;
 #X obj 116 298 % 12;
 #X obj 59 259 expr int($f1 / 12) * 12;
 #X obj 59 381 +;
@@ -57,6 +59,8 @@
 #X obj 219 78 inlet (message) scale name for mapping, f 35;
 #X obj 399 117 inlet (message) root name for transposing, f 37;
 #X obj 59 499 outlet (number) MIDI note mapped to scale and root;
+#X obj 678 381 declare -path else;
+#X obj 678 417 declare -path cyclone;
 #X connect 0 0 7 0;
 #X connect 1 0 2 0;
 #X connect 2 0 6 0;

@@ -1,4 +1,5 @@
 #N canvas 827 239 527 327 12;
+#X declare -path else;
 #X obj 59 439 netsend -u -b;
 #X obj 253 125 loadbang;
 #X obj 253 163 t b b;
@@ -16,6 +17,7 @@
 #X msg 322 399 disconnect \, connect \$1 \$2;
 #X obj 265 240 default list localhost 4880;
 #X obj 59 59 inlet (message) message to send \, can also be send with dc.osc.message, f 28;
+#X obj 462 276 declare -path else;
 #X connect 1 0 2 0;
 #X connect 2 0 13 0;
 #X connect 2 1 4 0;

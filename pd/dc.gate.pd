@@ -1,4 +1,5 @@
 #N canvas 827 239 527 327 12;
+#X declare -path else;
 #X obj 95 132 args;
 #X obj 95 101 loadbang;
 #X text 417 58 dc.gate;
@@ -8,6 +9,7 @@
 #X obj 140 240 outlet (number) output if below threshold;
 #X obj 95 277 outlet (number) output if above threshold;
 #X obj 59 59 inlet (number) input a number to gate;
+#X obj 416 180 declare -path else;
 #X connect 0 0 3 1;
 #X connect 1 0 0 0;
 #X connect 3 0 6 0;

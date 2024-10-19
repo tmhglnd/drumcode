@@ -1,4 +1,5 @@
 #N canvas 827 239 527 327 12;
+#X declare -path else;
 #X obj 81 197 args;
 #X obj 81 231 unjoin 2;
 #X text 319 58 dc.inrange;
@@ -9,6 +10,7 @@
 #X obj 157 231 inlet (number) lower limit for range;
 #X obj 178 271 inlet (number) upper limit for range;
 #X obj 59 372 outlet (number) matches the range;
+#X obj 319 332 declare -path else;
 #X connect 0 0 1 0;
 #X connect 1 0 5 1;
 #X connect 1 1 5 2;

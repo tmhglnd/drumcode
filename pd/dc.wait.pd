@@ -1,4 +1,5 @@
 #N canvas 827 239 527 327 12;
+#X declare -path else;
 #X obj 59 162 gate 1 1;
 #X msg 122 269 1;
 #X obj 59 118 t 0 a;
@@ -12,6 +13,7 @@
 #X obj 59 59 inlet (trigger/number) incoming value to limit in speed;
 #X obj 211 162 inlet (number) set wait time in milliseconds, f 21;
 #X obj 59 320 outlet (trigger/number) speed-limited output;
+#X obj 422 218 declare -path else;
 #X connect 0 0 3 0;
 #X connect 1 0 2 0 48.................K....T5++++B....k9+++2z+++ew++++M8+++W7++++U++++;
 #X connect 2 0 0 0;

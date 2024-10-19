@@ -1,4 +1,5 @@
 #N canvas 827 239 527 327 12;
+#X declare -path else;
 #X obj 59 322 makenote 120 250;
 #X obj 200 217 args;
 #X obj 200 253 unjoin 3;
@@ -11,6 +12,7 @@
 #X obj 106 99 inlet (number) MIDI velocity 0-127;
 #X obj 242 322 inlet (number) MIDI-channel to use;
 #X obj 153 139 inlet (number) note length in ms;
+#X obj 379 253 declare -path else;
 #X connect 0 0 5 0;
 #X connect 0 1 5 1;
 #X connect 1 0 2 0;
