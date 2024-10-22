@@ -46,7 +46,7 @@
 #X obj 200 406 meter~;
 #X obj 39 277 declare -path ~/Sync/work/projects/drumcode/pd;
 #X obj 200 633 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737;
-#X obj 272 548 hsl 128 17 0 1 0 1 empty empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 7247 1;
+#X obj 272 548 hsl 128 17 0 1 0 1 empty empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 0 1;
 #X text 269 464 <- [meter~] - useful to see the level of the incoming sound;
 #X text 39 1121 reduce speed limit of incoming values, f 17;
 #X text 269 523 adjust trigger the sensitivity (0 -> 1), f 31;

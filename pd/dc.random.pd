@@ -15,8 +15,8 @@
 #C store amplitude 0 1 0;
 #C store note 36 72 1;
 #C store pitch 36 72 1;
-#C store vel 60 125 1;
-#C store velocity 60 125 1;
+#C store vel 80 125 1;
+#C store velocity 80 125 1;
 #C store dur 50 500 1;
 #C store duration 50 500 1;
 #C restore;
