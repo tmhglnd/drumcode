@@ -87,7 +87,7 @@
 #X obj 40 1559 gain~ 1 0 20 0 0;
 #A saved;
 #X obj 35 1682 dac~;
-#X obj 437 1559 gain~ 1 0 20 0 0.804929;
+#X obj 437 1559 gain~ 1 0 20 0 0;
 #A saved;
 #X obj 432 1682 dac~;
 #X obj 436 1520 dc.beep~;
