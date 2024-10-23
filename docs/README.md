@@ -133,10 +133,10 @@ Create a slide (ramp down), of values that slide back to a ground value (usually
 
 inlets:
 1. (number) input a number to create a slide for
-2. (number) slide length 0-1
+2. (number) slide amount 0-127 (default = 64)
 
 arguments order:
-- (number) slide length 0-1
+- (number) slide length 0-127 (default = 64)
 
 attributes:
 - interval : set the time interval in milliseconds for reporting the output (default = 10)
