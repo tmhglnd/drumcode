@@ -52,7 +52,7 @@ inlets:
 arguments order:
 - (number) framesize in samples (default = 256, min = 8, max = 22050)
 
-### `dc.display~`
+<!-- ### `dc.display~` -->
 
 ## Time, Tempo, Density
 
@@ -288,14 +288,14 @@ attributes:
 A simple monophonic sinewave beep. Useful to quickly create a sound to test if a patch is working, to create a clicktrack to play along with, or to actually use for musical purposes of course!
 
 inlets:
-1. (trigger/number) MIDI note pitch triggers the note (default = 60)
+1. (trigger/number) MIDI note pitch triggers the note 0-127 (default = 60)
 2. (number) velocity/volume 1-127 (default = 127)
-3. (number) note length amount 0-1 (default = 0.25)
-4. (number) glide amount 0-1 (default = 0)
+3. (number) note length amount 0-127 (default = 30)
+4. (number) distortion amount (0-127) (default = 0)
 
 arguments:
 - (number) velocity/volume 1-127 (default = 127)
-- (number) note length amount 0-1 (default = 0.25)
-- (number) glide amount 0-1 (default = 0)
+- (number) note length amount 0-127 (default = 30)
+- (number) distortion amount 0-127 (default = 0)
 
 <!-- ### `dc.synth~` -->
