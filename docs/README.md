@@ -100,7 +100,18 @@ A simple taptempo feature. Input a trigger. If the triggers are received within 
 inlets:
 1. (trigger) estimate the tempo
 
-<!-- ### `dc.direction` -->
+### `dc.direction`
+
+Measure in which direction the tempo of a trigger is going. Speeding up (1) or slowing down (0). With an optional argument you can set the threshold for which a speeding/slowing tempo is detected, the default is above 20 milliseconds. You can also change the -mode to 1, in mode 1 the measure outputs a 0.5 if the tempo is not changing.
+
+inlets:
+1. (number) - time between triggers from `dc.timer`
+
+arguments:
+- (number) - threshold for speeding/slowing detection in ms (default = 20)
+
+attributes:
+- mode : in mode 0 only a `0` or `1` are output for slowing down or speeding up. In mode 1 a `0.5` is output if the speed doesn't change.
 
 ## Utilites
 
@@ -283,9 +294,9 @@ attributes:
 
 ## Sound Output
 
-### `dc.beep~`
+### `dc.synth~`
 
-A simple monophonic sinewave beep. Useful to quickly create a sound to test if a patch is working, to create a clicktrack to play along with, or to actually use for musical purposes of course!
+A simple polyphonic synth beep made from a sinewave with some distortion. Useful to quickly create a sound to test if a patch is working, to create a clicktrack to play along with, or to actually use for musical purposes of course!
 
 inlets:
 1. (trigger/number) MIDI note pitch triggers the note 0-127 (default = 60)
