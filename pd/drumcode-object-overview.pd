@@ -130,7 +130,6 @@
 #X text 462 1548 a distortion effect;
 #X text 462 1660 a filter effect with resonance, f 19;
 #X text 118 1631 a delay effect with delaytime \, feedback and damping, f 22;
-#X obj 39 796 dc.trigger.controls, f 57;
 #X obj 39 759 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #000000;
 #X obj 39 837 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #000000;
 #X floatatom 89 837 5 0 0 0 - - - 12;
@@ -147,6 +146,7 @@
 #X text 39 862 trigger;
 #X text 560 887 See below for more detailed individual objec \, ts like dc.timer \, dc.speed \, dc.tempo \, dc.direction \, etc, f 34;
 #X obj 39 981 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #000000;
+#X obj 39 796 dc.trigger.timecontrols, f 57;
 #X connect 1 0 13 0;
 #X connect 4 0 1 0;
 #X connect 5 0 7 0;
@@ -213,11 +213,11 @@
 #X connect 116 0 106 1;
 #X connect 119 0 103 0;
 #X connect 120 0 119 1;
-#X connect 125 0 127 0;
-#X connect 125 1 128 0;
-#X connect 125 2 129 0;
-#X connect 125 3 130 0;
-#X connect 125 4 131 0;
-#X connect 125 5 132 0;
-#X connect 126 0 125 0;
-#X connect 141 0 48 0;
+#X connect 125 0 141 0;
+#X connect 140 0 48 0;
+#X connect 141 0 126 0;
+#X connect 141 1 127 0;
+#X connect 141 2 128 0;
+#X connect 141 3 129 0;
+#X connect 141 4 130 0;
+#X connect 141 5 131 0;

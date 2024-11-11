@@ -19,13 +19,13 @@
 #X text 138 855 send sound to the speaker output;
 #X text 138 878 dac = Digital -> Analog Converter;
 #X text 124 238 adc = Analog -> Digital Converter;
-#X obj 60 729 gain~ 1 0 20 0 0;
+#X obj 60 729 gain~ 1 0 20 0 0.825185;
 #A saved;
 #X text 89 728 a [gain~] slider to control the sound output;
 #X text 59 157 In this template one trigger input is detected and used to trigger some MIDI notes send to a little synth. We can trigger notes specified as a list \, or we can also use random numbers. You can try to adjust values to hear the differences.;
-#X obj 171 621 hsl 128 17 0 127 0 1 empty empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #000000 3132 1;
+#X obj 171 621 hsl 128 17 0 127 0 1 empty empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #000000 5296 1;
 #X text 312 620 adjust the note length;
-#X obj 212 649 hsl 128 17 0 127 0 1 empty empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #000000 649 1;
+#X obj 212 649 hsl 128 17 0 127 0 1 empty empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #000000 2336 1;
 #X obj 59 561 dc.step 60 63 62 62 67 67 63 59;
 #X text 353 648 adjust the distortion;
 #X text 263 560 some MIDI notes to step through every time a trigger is send, f 30;
