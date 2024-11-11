@@ -17,11 +17,11 @@
 #X obj 419 475 outlet (number) direction of speed. slowing down (0) or speeding up (127), f 23;
 #X obj 529 321 outlet (number) hits counted;
 #X obj 54 619 outlet (bang) trigger through;
-#X obj 54 60 inlet (trigger) trigger input;
 #X obj 54 99 t b b b;
 #X obj 619 59 cnv 15 283 29 empty empty dc.trigger2controls 20 13 0 20 #00deb1 #ffffff 0;
 #X text 619 102 A set of most used time measurements to use as controls for parameters in the patch or sound as MIDI/OSC to external devices and software., f 41;
 #X text 619 164 Included measurements are: speed direction \, counted hits in timeframe \, speed slide \, speed number \, time interval \, and bang through, f 41;
+#X obj 54 60 inlet (trigger) trigger input from dc.trigger~;
 #X connect 1 0 5 0;
 #X connect 2 0 9 0;
 #X connect 3 0 6 0;
@@ -35,7 +35,7 @@
 #X connect 8 0 13 0;
 #X connect 9 0 14 0;
 #X connect 10 0 8 0;
-#X connect 17 0 18 0;
-#X connect 18 0 16 0;
-#X connect 18 1 1 0;
-#X connect 18 2 4 0;
+#X connect 17 0 16 0;
+#X connect 17 1 1 0;
+#X connect 17 2 4 0;
+#X connect 21 0 17 0;
