@@ -309,4 +309,50 @@ arguments:
 - (number) note length amount 0-127 (default = 30)
 - (number) distortion amount 0-127 (default = 0)
 
+### `dc.sample~`
+
+inlets:
+
+arguments:
+
+### `dc.fx.delay~`
+
+A delay effect in an "analog tape style" consisting of a delaytime, feedback amount and a damping filter. All the parameters range from 0-127 for ease of use with MIDI values.
+
+inlets:
+1. (signal) sound to be delayed
+2. (number) delaylength 0 - 127 (default = 40)
+3. (number) feedback 0 - 127 (default = 90)
+4. (number) damping 0 - 127 (default = 70)
+
+arguments:
+- (number) delaylength 0 - 127 (default = 40)
+- (number) feedback 0 - 127 (default = 90)
+- (number) damping 0 - 127 (default = 70)
+
+
+### `dc.fx.distortion~`
+
+A distortion effect in an "analog soft-clipping style". The distortion amount is set in a range from 0-127 for ease of use with MIDI values.
+
+inlets:
+1. (signal) sound to distort
+2. (number) distortion amount 0 - 127 (default 40)
+
+arguments:
+- (number) distortion amount 0 - 127 (default 40)
+
+### `dc.fx.filter~`
+
+A lowpass filter effect in an "analog style" consisting of a cutoff frequency and a resonance. All the parameters range from 0-127 for ease of use with MIDI values.
+
+inlets:
+1. (signal) sound to be filtered
+2. (number) filter cutoff 0-127 (default = 70)
+3. (number) filter resonance 0-127 (default = 40)
+
+arguments:
+- (number) filter cutoff 0-127 (default = 70)
+- (number) filter resonance 0-127 (default = 40)
+
 <!-- ### `dc.synth~` -->
