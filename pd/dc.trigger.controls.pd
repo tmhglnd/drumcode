@@ -19,7 +19,7 @@
 #X obj 54 619 outlet (bang) trigger through;
 #X obj 54 60 inlet (trigger) trigger input;
 #X obj 54 99 t b b b;
-#X obj 619 59 cnv 15 283 29 empty empty dc.trigger.controls 20 13 0 20 #00deb1 #ffffff 0;
+#X obj 619 59 cnv 15 283 29 empty empty dc.trigger2controls 20 13 0 20 #00deb1 #ffffff 0;
 #X text 619 102 A set of most used time measurements to use as controls for parameters in the patch or sound as MIDI/OSC to external devices and software., f 41;
 #X text 619 164 Included measurements are: speed direction \, counted hits in timeframe \, speed slide \, speed number \, time interval \, and bang through, f 41;
 #X connect 1 0 5 0;

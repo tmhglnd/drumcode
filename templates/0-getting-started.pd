@@ -25,7 +25,7 @@
 #X text 499 78 License: GNU GPL-3.0;
 #X text 499 98 Funded by Creative Industries Fund NL;
 #X obj 59 109 cnv 15 421 31 empty empty Setting\ up 20 14 0 20 #838383 #ffffff 0;
-#X text 59 157 This template is the end result of the setting up guide on the documentation. Please follow along with that guide to understand how everything is connected.;
+#X text 59 157 This template is the end result of the Setup Guide from the documentation. Please follow along with that guide to understand how everything is connected and works.;
 #X connect 0 0 1 0;
 #X connect 1 0 5 0;
 #X connect 5 0 6 0;
