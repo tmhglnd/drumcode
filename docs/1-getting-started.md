@@ -76,23 +76,23 @@ After downloading, start PlugData. You can open a New Patch via the menu icon or
 - Input Device: Choose your soundcard here
 	- Inputs: Make sure they are `Enabled`
 
-![](img0-audio-settings.png)
+<img src="img0-audio-settings.png" width="50%"></img>
 
 Please also make sure you reset the shortcuts to Max default via the menu `Shortcuts` and `Reset to Max Defaults`. This will help later to have some useful shortkeys to work a bit faster.
 
-![](img3-max-shortcuts.png)
+<img src="img3-max-shortcuts.png" width="30%"></img>
 
 ### 4. Turn on the audio
 
 Go back to the empty New Patch and click the "power" icon on the bottom right to make sure it is blue. This turns on the audio processing (called Digital Signal Processing or DSP).
 
-![](img1-audio-on.png)
+<img src="img1-audio-on.png" width="30%"></img>
 
 ## Receiving contact microphone input
 
 Before we start patching, make sure the patch is in Edit Mode by clicking the pencil icon on the top of the window.
 
-![](img4-edit-mode.png)
+<img src="img4-edit-mode.png" width="30%"></img>
 
 ### 1. Create an input
 
@@ -102,7 +102,7 @@ To receive the sound from the contact microphone in the Patch, create an `[adc~ 
 
 Connect the `[adc~ 1]` output to a new object that you create, called `[meter~]`. If this goes well you should see the signal come in while playing the drum.
 
-![](img2-adc-meter.png)
+<img src="img2-adc-meter.png" width="30%"></img>
 
 ## Listening for triggers
 
@@ -116,6 +116,4 @@ All the objects from drumcode start with the prefix `dc.`. And if an object does
 - If we want to see the "trigger" happening we can visualise this in a button. Create a button by click `b` on the keyboard, or click `n` and type `bng`, a button is also called a "bang" (bng). Connect the output from `[dc.trigger~]` to the `button`. 
 - Now hit the drum and see if the button lights up.
 
-<!-- ![](img5-trigger-bang.png) -->
-
-<img src="img5-trigger-bang.png" width="50%"></img>
+<img src="img5-trigger-bang.png" width="30%"></img>
