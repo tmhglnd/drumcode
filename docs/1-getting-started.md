@@ -146,4 +146,4 @@ Now you have to "Lock" the patch and put it in Run Mode by clicking the pencil i
 
 After locking the patch you can slowly increase volume of the slider and hear a note played when you hit the drum.
 
-![](img6-synth-note.png)
+<img src="./img6-synth-note.png" width="40%"></img>
