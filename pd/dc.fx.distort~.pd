@@ -1,4 +1,6 @@
 #N canvas 827 239 734 565 12;
+#X declare -path cyclone;
+#X declare -path else;
 #X obj 59 193 tanh~;
 #X obj 59 155 *~;
 #X obj 59 238 *~;
@@ -13,6 +15,8 @@
 #X msg 432 162 \$1;
 #X obj 282 59 inlet (number) distortion amount 0 - 127 (default 40);
 #X obj 282 139 float2sig~ 25 6;
+#X obj 432 249 declare -path cyclone;
+#X obj 432 281 declare -path else;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 2 0 4 0;

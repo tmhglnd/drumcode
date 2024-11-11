@@ -1,4 +1,6 @@
 #N canvas 827 239 734 565 12;
+#X declare -path cyclone;
+#X declare -path else;
 #X obj 599 59 cnv 15 283 29 empty empty dc.fx.filter~ 20 13 0 20 #00deb1 #ffffff 0;
 #X text 599 102 A simple lowpass filter effect in an "analog style" consisting of a cutoff frequency and a resonance. All the parameters range from 0-127 for ease of use with MIDI values., f 41;
 #X obj 59 546 outlet~ (signal) filtered sound output;
@@ -19,6 +21,8 @@
 #X obj 115 326 scale 0 127 38 125;
 #X obj 115 103 inlet (number) filter cutoff 0-127 (default = 70);
 #X obj 260 147 inlet (number) filter resonance 0-127 (default = 40);
+#X obj 430 514 declare -path cyclone;
+#X obj 430 546 declare -path else;
 #X connect 4 0 2 0;
 #X connect 5 0 16 1;
 #X connect 6 0 9 0;
