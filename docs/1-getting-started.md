@@ -1,11 +1,11 @@
 # Getting Started
 
-1. Attaching contact microphone to the drums
-2. Setting up the soundcard connections
-3. Setting up the computer software
-4. Receiving contact microphone input input
-5. Listening for triggers
-6. Triggering an electronic sound
+Chapter 1: Attaching contact microphone to the drums
+Chapter 2: Setting up the soundcard connections
+Chapter 3: Setting up the computer software
+Chapter 4: Receiving contact microphone input input
+Chapter 5: Listening for triggers
+Chapter 6: Triggering an electronic sound
 
 ## Attaching the contact microphone to the drums
 
@@ -56,6 +56,14 @@ You might need to install some driver based on the soundcard that you bought. Ch
 
 This project uses the programming environment PlugData. Install it via [https://plugdata.org/download.html](https://plugdata.org/download.html)
 
+### 3. Install drumcode
+
+The drumcode project is a little extension for the PlugData environment. You need to download it and install it in the correct place. You can do this by: 
+
+- [download `drumcode` here](https://github.com/tmhglnd/drumcode/archive/refs/heads/main.zip)
+- Unzip the folder and move it to your `/Documents/plugdata/externals`
+- Rename the folder to `drumcode`
+
 ### 3. Setting up PlugData
 
 After downloading, start PlugData. You can open a New Patch via the menu icon or with `cmd/ctrl + n`. Go to the PlugData preferences via the menu (top-left) or with `cmd/ctrl + ,`. In the `Audio Settings` adjust the following settings:
@@ -70,6 +78,10 @@ After downloading, start PlugData. You can open a New Patch via the menu icon or
 
 ![](img0-audio-settings.png)
 
+Please also make sure you reset the shortcuts to Max default via the menu `Shortcuts` and `Reset to Max Defaults`. This will help later to have some useful shortkeys to work a bit faster.
+
+![](img3-max-shortcuts.png)
+
 ### 4. Turn on the audio
 
 Go back to the empty New Patch and click the "power" icon on the bottom right to make sure it is blue. This turns on the audio processing (called Digital Signal Processing or DSP).
@@ -78,12 +90,30 @@ Go back to the empty New Patch and click the "power" icon on the bottom right to
 
 ## Receiving contact microphone input
 
+Before we start patching, make sure the patch is in Edit Mode by clicking the pencil icon on the top of the window.
+
+![](img4-edit-mode.png)
+
 ### 1. Create an input
 
-To receive the sound from the contact microphone in the Patch, create an `[adc~ 1]` object. `adc` stands for Analog to Digital Converter, which means we receive the analog signal from the contact microphone in the digital domain of the computer. The `1` stands for the first input, if we would use another input we type `2`, etc.
+To receive the sound from the contact microphone in the Patch, create an `[adc~ 1]` object. You can create objects by pressing `n` on the keyboard. `adc` stands for Analog to Digital Converter, which means we receive the analog signal from the contact microphone in the digital domain of the computer. The `1` stands for the first input, if we would use another input we type `2`, etc.
 
 ### 2. Seeing the signal
 
 Connect the `[adc~ 1]` output to a new object that you create, called `[meter~]`. If this goes well you should see the signal come in while playing the drum.
 
 ![](img2-adc-meter.png)
+
+## Listening for triggers
+
+In order to perform events in the computer when we hit the drum we need to do some analysis on the signal. The drumcode project has some objects for this to make our live easier. In order to be able to use all the objects from drumcode you have to let PlugData know where they are, by declaring the path in the patch.
+
+- Create an empty object and type `[declare -path /drumcode/pd]` in the patch
+
+All the objects from drumcode start with the prefix `dc.`. And if an object does something with a signal (sound) it ends with the `~` (tilde). 
+
+- Now create the object `[dc.trigger~]` and connect the output from the `[meter~]` to the input of the `[dc.trigger~]`.
+- If we want to see the "trigger" happening we can visualise this in a button. Create a button by click `b` on the keyboard, or click `n` and type `bng`, a button is also called a "bang" (bng). Connect the output from `[dc.trigger~]` to the `button`. 
+- Now hit the drum and see if the button lights up.
+
+![](img5-trigger-bang.png)
