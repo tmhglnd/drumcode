@@ -117,3 +117,33 @@ All the objects from drumcode start with the prefix `dc.`. And if an object does
 - Now hit the drum and see if the button lights up.
 
 <img src="img5-trigger-bang.png" width="40%"></img>
+
+## Triggering an electronic sound
+
+Now that we have a "trigger" (or also called a "bang" or "event") in the patch, we can use that to trigger some other process, like for example playing a MIDI note (for example a C) through a little synthesizer. For this we need a few things:
+
+### 1. A MIDI-note
+
+First we create a message (by clicking `m` on the keyboard), in this message we type the number `60` for the MIDI note. 
+
+### 2. A Synthesizer that generates a sound
+
+Now we create the `[dc.synth~]`, a simple synthesizer that we can use to produce some sound
+
+We now connect the bang from the `[dc.trigger~]` output to the input of the message `60`, and we connect the output of the message to the input of the `[dc.synth~]`.
+
+### 3. Output to the speakers
+
+If we want to hear the sound from the synth we need to send it to the speakers. For that we use a `[dac~ 1 2]`. `dac` stands for Digital to Analog Converter, and 1 2 for the first and second output, which is the Left and Right speaker so we get a stereo sound.
+
+**Never connect the synth directly to the speakers**. Always add a volume slider (or usually called a gain slider) in between, so you can adjust the volume to your liking
+
+### 4. A volume slider
+
+Create a `[gain~]` slider. You can now connect the output of the synth to the gain slider input. And connect the gain slider output to the Left and Right inputs from the `[dac~]`. 
+
+Now you have to "Lock" the patch and put it in Run Mode by clicking the pencil icon with the stripe through on the top.
+
+After locking the patch you can slowly increase volume of the slider and hear a note played when you hit the drum.
+
+![](img6-synth-note.png)
