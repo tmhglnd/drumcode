@@ -68,6 +68,8 @@ After downloading, start PlugData. You can open a New Patch via the menu icon or
 - Input Device: Choose your soundcard here
 	- Inputs: Make sure they are `Enabled`
 
+![](img0-audio-settings.png)
+
 4. Turn on the audio
 
 Go back to the empty New Patch and click the "power" icon on the bottom right to make sure it is blue. This turns on the audio processing (called Digital Signal Processing or DSP).
