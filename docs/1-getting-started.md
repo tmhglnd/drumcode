@@ -116,4 +116,6 @@ All the objects from drumcode start with the prefix `dc.`. And if an object does
 - If we want to see the "trigger" happening we can visualise this in a button. Create a button by click `b` on the keyboard, or click `n` and type `bng`, a button is also called a "bang" (bng). Connect the output from `[dc.trigger~]` to the `button`. 
 - Now hit the drum and see if the button lights up.
 
-![](img5-trigger-bang.png)
+<!-- ![](img5-trigger-bang.png) -->
+
+<img src="img5-trigger-bang.png" width="50%"></img>
