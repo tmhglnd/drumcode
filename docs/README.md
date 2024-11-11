@@ -5,7 +5,7 @@
 
 ## Chapters
 
--[Guide: Getting Started](./1-getting-started.md)
--[Guide: Build your own trigger (to do)]()
--[Guide: Templates (to do)]()
--[Reference: all Objects](./reference.md)
+- [Guide: Getting Started](./1-getting-started.md)
+- [Guide: Build your own trigger (to do)]()
+- [Guide: Templates (to do)]()
+- [Reference: all Objects](./reference.md)
