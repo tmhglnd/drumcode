@@ -9,7 +9,7 @@
 
 ## Attaching the contact microphone to the drums
 
-1. Get a contact microphone (trigger)
+### 1. Get a contact microphone (trigger)
 
 We use a contact microphone to get the direct sound (vibrations) from a drumhead or cymbal. There are various forms of contact microphones that can be used. Some can be bought specifically for drums or other instruments like guitar, but it is also possible to make one by hand. Below a list of common contact microphones and a DIY guide:
 
@@ -20,13 +20,13 @@ We use a contact microphone to get the direct sound (vibrations) from a drumhead
 
 Many of these triggers rely on a so called piezo element. This is a small metal plate with a ceramic top layer. When connecting this to a surface (like a drumhead) it can measure the variations in vibrations and convert those to a small alternating voltage.
 
-2. Attach the contact microphone.
+### 2. Attach the contact microphone.
 
 Depending on the trigger you have, follow the instructions of the manufacturer to attach it to the drumhead. If you build the trigger yourself, you can use some stage-tape (or gaffer-tape, gaffa-tape) to attach the contact microphone to the drumhead. **Don't use duct-tape**, since this will leave a lot of glue residue after removing.
 
 ## Setting up the soundcard connections
 
-1. Get an external soundcard with instrument input
+### 1. Get an external soundcard with instrument input
 
 In order to receive the signal from the contact microphone in the computer we need an external USB soundcard with at least one 1/4" Jack input (sometimes called Hi-Z or Instrument input). Soundcards come in many shapes and price ranges. Depending on the amount of triggers you have you may need a bigger soundcard. Below is a list of some decent soundcards to get started with in the range of €50 - 150:
 
@@ -34,29 +34,29 @@ In order to receive the signal from the contact microphone in the computer we ne
 - [Presonus Studio 24c](https://www.thomann.de/nl/presonus_studio_24c.htm)
 - [Behringer UMC404](https://www.thomann.de/nl/social_70th-anniversary.html)
 
-2. Connect the trigger
+### 2. Connect the trigger
 
 Connect the trigger with the proper cable to the soundcard. For this you'll need to pay attention to the types of connections. There is XLR (microphone cable) or Jack (instrument cable), and both come in socket & plug variants. For example the ddrum trigger has an XLR output (plug), and the presonus studio interface has an XLR/Jack combo input. So you'll need an XLR socket to XLR plug cable, or XLR socket to Jack plug.
 
-3. Gain the input
+### 3. Gain the input
 
 Play on the drum while adjust the input Gain on the soundcard by rotating the knob for the input. Make sure the input is as loud as possible, but **not clipping** (which means distortion). Most soundcards have an indication for this. The light is green/orange/yellow when it is in the safe zone, if it turns red the gain is too much and you'll have to dial back.
 
-4. Connect the soundcard
+### 4. Connect the soundcard
 
 Connect the soundcard to the computer via the USB port. You might need a USB dongle depending on the type of cable.
 
 ## Setting up the computer software
 
-1. Install soundcard driver
+### 1. Install soundcard driver
 
 You might need to install some driver based on the soundcard that you bought. Check the website of the manufacturer to make sure and download and install the software.
 
-2. Install PlugData
+### 2. Install PlugData
 
 This project uses the programming environment PlugData. Install it via [https://plugdata.org/download.html](https://plugdata.org/download.html)
 
-3. Setting up PlugData
+### 3. Setting up PlugData
 
 After downloading, start PlugData. You can open a New Patch via the menu icon or with `cmd/ctrl + n`. Go to the PlugData preferences via the menu (top-left) or with `cmd/ctrl + ,`. In the `Audio Settings` adjust the following settings:
 
@@ -70,7 +70,7 @@ After downloading, start PlugData. You can open a New Patch via the menu icon or
 
 ![](img0-audio-settings.png)
 
-4. Turn on the audio
+### 4. Turn on the audio
 
 Go back to the empty New Patch and click the "power" icon on the bottom right to make sure it is blue. This turns on the audio processing (called Digital Signal Processing or DSP).
 
@@ -78,11 +78,11 @@ Go back to the empty New Patch and click the "power" icon on the bottom right to
 
 ## Receiving contact microphone input
 
-1. Create an input
+### 1. Create an input
 
 To receive the sound from the contact microphone in the Patch, create an `[adc~ 1]` object. `adc` stands for Analog to Digital Converter, which means we receive the analog signal from the contact microphone in the digital domain of the computer. The `1` stands for the first input, if we would use another input we type `2`, etc.
 
-2. Seeing the signal
+### 2. Seeing the signal
 
 Connect the `[adc~ 1]` output to a new object that you create, called `[meter~]`. If this goes well you should see the signal come in while playing the drum.
 
