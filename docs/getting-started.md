@@ -1,11 +1,11 @@
 # Getting Started
 
-Chapter 1: Attaching contact microphone to the drums
-Chapter 2: Setting up the soundcard connections
-Chapter 3: Setting up the computer software
-Chapter 4: Receiving contact microphone input input
-Chapter 5: Listening for triggers
-Chapter 6: Triggering an electronic sound
+- Chapter 1: Attaching contact microphone to the drums
+- Chapter 2: Setting up the soundcard connections
+- Chapter 3: Setting up the computer software
+- Chapter 4: Receiving contact microphone input input
+- Chapter 5: Listening for triggers
+- Chapter 6: Triggering an electronic sound
 
 ## Attaching the contact microphone to the drums
 
