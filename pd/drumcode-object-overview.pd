@@ -1,6 +1,7 @@
 #N canvas 827 239 527 327 12;
 #X declare -path ~/path/to/sounds;
 #X declare -path drumcode/pd;
+#X declare -path FluidCorpusManipulation;
 #X obj 39 96 cnv 15 421 67 empty empty written\ by\ Timo\ Hoogland\,\ 2024\,\ www.timohoogland.com 7 12 0 12 #efefef #000000 0;
 #X obj 39 1980 dc.timer;
 #X obj 39 39 cnv 15 421 41 empty empty ./drum.code 20 20 0 24 #00cb9e #ffffff 0;
@@ -147,6 +148,11 @@
 #X text 560 887 See below for more detailed individual objec \, ts like dc.timer \, dc.speed \, dc.tempo \, dc.direction \, etc, f 34;
 #X obj 39 981 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #000000;
 #X obj 39 796 dc.trigger.timecontrols, f 57;
+#X obj 39 319 declare -path FluidCorpusManipulation;
+#X obj 570 351 pdcontrol;
+#X msg 570 318 browse https://github.com/flucoma/flucoma-pd/releases/latest;
+#X text 281 317 You need to install Fluid Corpus Manipulation:, f 40;
+#X text 571 292 click the link \, after download \, unzip and place in /Documents/plugdata/externals, f 68;
 #X connect 1 0 13 0;
 #X connect 4 0 1 0;
 #X connect 5 0 7 0;
@@ -221,3 +227,4 @@
 #X connect 141 3 129 0;
 #X connect 141 4 130 0;
 #X connect 141 5 131 0;
+#X connect 144 0 143 0;
