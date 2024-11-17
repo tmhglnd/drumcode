@@ -102,9 +102,15 @@ For this project I've found inspiration in many different places, from different
 	- Electronic Drums, Live Coding
 - [Graham Dunning - Mechanical Techno](https://www.youtube.com/watch?v=HG8qR75R-as) 
 	- Triggers, DIY Instrument
+- [Dan Mayo - Black Ash](https://www.youtube.com/watch?v=UVaoFt6rFGQ)
+	- Drums, Live Electronics
+- [Gerri Jäger - Solo Lux](https://www.youtube.com/watch?v=onmv5ZEj1fY)
+	- Drums, Triggers, Live Electronics
+- [Ian Chang - Guzheng](https://www.youtube.com/watch?v=HCdocdYcenk)
+	- Drums, Mesh heads, Software Library Sensory Percussion
 - [Owen Green & Rodrigo Constanza - Talk Play Talk](https://youtu.be/aslEJBB9iT4?si=ahGDTmu7IG6gE6Mf)
 	- Live electronics, Hybrid Instrument, Machine Listening
-- [SP-Tools](https://rodrigoconstanzo.com/2022/07/sp-tools-machine-learning-tools-for-drums-and-percussion-alpha/)
+- [SP-Tools by Rodrigo Constanza](https://rodrigoconstanzo.com/2022/07/sp-tools-machine-learning-tools-for-drums-and-percussion-alpha/)
 	- Machine Learning, Software Library
 
 ## 📝 License
