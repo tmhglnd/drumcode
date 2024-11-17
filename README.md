@@ -5,6 +5,7 @@
 <!-- [**🙏 Support me by buying me a coffee on ko-fi**](https://ko-fi.com/tmhglnd) -->
 
 - [Install](#-install)
+- [Getting Started](./docs/getting-started.md)
 - [Documentation](./docs/README.md)
 
 ⭐️ **watch and star this repo to keep up-to-date with the latest results of my research**

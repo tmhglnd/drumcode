@@ -56,7 +56,15 @@ You might need to install some driver based on the soundcard that you bought. Ch
 
 This project uses the programming environment PlugData. Install it via [https://plugdata.org/download.html](https://plugdata.org/download.html)
 
-### 3. Install drumcode
+### 3. Install FluidCorpusManipulation
+
+The Fluid Corpus Manipulation is a library of software tools that allows electronic music makers to program with machine learning and neural networks for sound. Drumcode uses this library in some of its objects, so therefore this must be installed as well. 
+
+- [download `FluidCorpusManipulation` here (click Pure Data Binaries)](https://www.flucoma.org/download/)
+- Unpack the .dmg, .zip or .tar.gz (depending on your platform)
+- Place the FluidCorpusManipulation folder in your `/Documents/plugdata/externals`
+
+### 4. Install drumcode
 
 The drumcode project is a little extension for the PlugData environment. You need to download it and install it in the correct place. You can do this by: 
 
@@ -64,7 +72,7 @@ The drumcode project is a little extension for the PlugData environment. You nee
 - Unzip the folder and move it to your `/Documents/plugdata/externals`
 - Rename the folder to `drumcode`
 
-### 3. Setting up PlugData
+### 5. Setting up PlugData
 
 After downloading, start PlugData. You can open a New Patch via the menu icon or with `cmd/ctrl + n`. Go to the PlugData preferences via the menu (top-left) or with `cmd/ctrl + ,`. In the `Audio Settings` adjust the following settings:
 
@@ -82,7 +90,7 @@ Please also make sure you reset the shortcuts to Max default via the menu `Short
 
 <img src="./images/img3-max-shortcuts.png" width="40%"></img>
 
-### 4. Turn on the audio
+### 6. Turn on the audio
 
 Go back to the empty New Patch and click the "power" icon on the bottom right to make sure it is blue. This turns on the audio processing (called Digital Signal Processing or DSP).
 
