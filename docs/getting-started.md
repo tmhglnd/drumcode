@@ -16,9 +16,9 @@ We use a contact microphone to get the direct sound (vibrations) from a drumhead
 - [ddrum trigger](https://www.thomannmusic.com/ddrum_acoustic_pro_pack.htm) (for kick, snare, toms)
 - [roland trigger](https://www.thomannmusic.com/roland_rt_30hr_dual_trigger.htm) (for kick, snare, toms)
 - [k&k hot spot](https://www.thomannmusic.com/kk_hot_spot.htm) (for kick, snare, toms and for other percussion & cymbals)
-- [DIY trigger build guide (coming soon...)]() (for kick, snare, toms and for other percussion & cymbals)
+- [DIY trigger build guide](./diy-triggers.md) (for kick, snare, toms and for other percussion & cymbals)
 
-Many of these triggers rely on a so called piezo element. This is a small metal plate with a ceramic top layer. When connecting this to a surface (like a drumhead) it can measure the variations in vibrations and convert those to a small alternating voltage.
+Many of these triggers rely on the so called "piezo element". This is a small metal disc with a ceramic top layer. When connecting this to a surface (like a drumhead) it can measure the variations in vibrations and convert those to a small alternating voltage.
 
 ### 2. Attach the contact microphone.
 

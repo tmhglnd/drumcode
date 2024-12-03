@@ -325,9 +325,26 @@ arguments:
 
 ### `dc.sample~`
 
+Play a sample (soundfile) from the computer when a trigger (bang) is send to the left inlet. The sound can be loaded via the read message send to the left inlet. Alternatively the first argument can be the name of the soundfile if the file is in the searchpath. For example by adding the object [declare -path /path/to/sounds/folder]. Then easily load the sound with for example: [dc.sample~ bell.wav]
+
 inlets:
+1. (trigger/number/read) play the sound, play the sound with a different playback speed, load a soundfile
+2. (number) velocity of the sound 0-127 (default = 120)
 
 arguments:
+- (name) a name or path of a soundfile to load
+
+### `dc.sampler~`
+
+Play multiple samples (soundfiles) from a loaded folder of sounds from the computer when a trigger (bang) or number (number) is send to the left inlet. The sound can be loaded via the "read" message send to the left inlet. The number send ot the inlet is the index of the loaded sample. With the message "stop" you can stop the sound while it is still playing.
+
+inlets:
+1. (trigger/number/read/stop) trigger first sample, play the index of the sample, load a folder, stop the sound
+2. (number) velocity of the sound 0-127 (default = 120)
+3. (number) playback rate 0-127 (default = 64)
+
+arguments:
+- (path) a filepath to a folder to load samples from
 
 ### `dc.fx.delay~`
 
@@ -367,5 +384,18 @@ inlets:
 arguments:
 - (number) filter cutoff 0-127 (default = 70)
 - (number) filter resonance 0-127 (default = 40)
+
+### `dc.fx.reverb~`
+
+A reverb effect in an "plate style" consisting of a roomsize and a brightness/damping filter. All the parameters range from 0-127 for ease of use with MIDI values.
+
+inlets:
+1. (signal) sound to be reverberated
+2. (number) roomsize 0 - 127 (default = 40)
+3. (number) brightness 0 - 127 ( default = 40)
+
+arguments:
+- (number) roomsize 0 - 127 (default = 40)
+- (number) brightness 0 - 127 ( default = 40)
 
 <!-- ### `dc.synth~` -->

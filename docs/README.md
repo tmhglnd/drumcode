@@ -5,8 +5,8 @@
 
 ## Chapters
 
-- [Guide: Getting Started](getting-started.md)
-- [Guide: Build your own trigger (to do...)]()
+- [Guide: Getting Started](./getting-started.md)
+- [Guide: Build your own trigger](./diy-triggers.md)
 - [Guide: Templates (to do...)]()
 	- For now see templates folder for ready-to-go patches
 - [Reference: all Objects](./reference.md)
