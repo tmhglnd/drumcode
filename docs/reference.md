@@ -2,7 +2,7 @@
 
 *DISCLAIMER: This project is currently in development. Please be aware that things may change rapidly and there might be bugs in the software or errors in the documentation. You are welcome to file an issue if you encounter any errors.*
 
-At the moment drumcode is being developed in Max/MSP, although I am thinking of porting to Pure Data for more accessibility.
+At the moment drumcode is being developed in Pure Data (Plug Data), but I'm considering creating clones for MaxMSP as well.
 
 ## Table of Content
 
@@ -12,11 +12,13 @@ A rough outline of the different type of objects in this library:
 - [Time, Tempo, Density](#time-tempo-density)
 - [Pitch, Timbre, Descriptors](#pitch-timbre-descriptors)
 - [Utilities](#utilites)
-- [Number Generators & Sequences](#number-generators--sequences)
+- [Generators, Algorithms & Sequences](#generators-algorithms--sequences)
 - [MIDI & OSC Output](#midi--osc-output)
 - [Sound Output](#sound-output)
 
 ## Audio Analysis
+
+Use the following objects to analyse the incoming sound from the contact microphone through the external soundcard. The trigger analysis will give you a trigger or short frame of sound to process further for tempo or pitch related analysis.
 
 ### `dc.trigger~`
 
@@ -54,6 +56,8 @@ arguments order:
 <!-- ### `dc.display~` -->
 
 ## Time, Tempo, Density
+
+Use the following objects to derive tempo related information from the triggers. For example measure the milliseconds between hits, or track the average speed at which you're playing, or see if you're slowing down or speeding up, or count a certain amount of hits in a specific timeframe.
 
 ### `dc.trigger.timecontrols`
 
@@ -207,22 +211,11 @@ arguments order:
 
 ## Pitch, Timbre, Descriptors
 
-## Number Generators & Sequences
+(coming soon...)
 
-### `dc.random`
+## Generators, Algorithms & Sequences
 
-Generate random values within a minimum and maximum range. The low and high values are included. You can specify a default range with "amplitude"/"amp", "velocity"/"vel", "note"/"pitch", "duration"/"dur" to quickly get some output in a desired range. Otherwise specify the low, high range, and if the output should be integer (1, default) or float (0)
-
-inlets:
-1. (trigger) trigger the output of a random number
-2. (number) the lowest possible value (default = 36)
-3. (number) the highest possible value (default = 72)
-
-arguments:
-- (number) the lowest possible value (default = 36)
-	- or: (symbol) a single word to set the range (note, velocity, duration, amplitude)
-- (number) the highest possible value (default = 72)
-- (on/off) the random numbers are only whole numbers (default = true (1))
+Use the following objects to generate sequences of values, for example for MIDI notes, velocities or modulations. You can generate things randomly, create a specific sequence of values, train a simple model to learn from a sequence, and do some things algorithmically with chance over counting.
 
 ### `dc.chance`
 
@@ -246,6 +239,21 @@ inlets:
 arguments:
 - (number) every time (default = 8)
 
+### `dc.random`
+
+Generate random values within a minimum and maximum range. The low and high values are included. You can specify a default range with "amplitude"/"amp", "velocity"/"vel", "note"/"pitch", "duration"/"dur" to quickly get some output in a desired range. Otherwise specify the low, high range, and if the output should be integer (1, default) or float (0)
+
+inlets:
+1. (trigger) trigger the output of a random number
+2. (number) the lowest possible value (default = 36)
+3. (number) the highest possible value (default = 72)
+
+arguments:
+- (number) the lowest possible value (default = 36)
+	- or: (symbol) a single word to set the range (note, velocity, duration, amplitude)
+- (number) the highest possible value (default = 72)
+- (on/off) the random numbers are only whole numbers (default = true (1))
+
 <!-- ### `dc.list.spread` -->
 
 ### `dc.step`
@@ -259,7 +267,7 @@ inlets:
 arguments:
 - (number) as many numbers you want to have part of the list
 
-## `dc.learn`
+### `dc.learn`
 
 This object learns a pattern from an incoming list of values and when send a trigger will play a pattern that is similar to the learned one. This is based on the probability of what is most likely to happen next. The learning is done through a Markov Chain, a probabilistic sequence prediction model. The default order of the chain is 2, but can be adjusted with -order attribute. A list send to the second inlet with clear the model and train on that list. A list send to the third inlet with add the list to the previous training.
 
@@ -277,6 +285,8 @@ attributes:
 <!-- ### `dc.scale` -->
 
 ## MIDI & OSC
+
+Use these objects if you prefer to use other software (like a DAW such as Ableton, Logic or other coding language like SuperCollider, Max) and you want to send the output from the analysis to those platforms. You can send messages over MIDI (midi notes and control change) or over OSC (Open Sound Control).
 
 <!-- ### `dc.midi.info` -->
 
@@ -340,6 +350,8 @@ attributes:
 - name : bind to a named dc.osc.send (optional)
 
 ## Sound Output
+
+Use the following objects if you want to create some sound directly in PureData / PlugData. Depending on the instrument you can trigger them with a note, a bang (trigger) or a number. Below the sound generators (synth, sample and sampler) there are also some effects (fx) that you can use to extend the sound design. For example with a reverb, delay or distortion.
 
 ### `dc.synth~`
 
