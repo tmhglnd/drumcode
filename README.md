@@ -47,7 +47,10 @@ The drumcode library uses the following dependencies, which you will have to dow
 2. Place the following object in the patch: `[declare -path drumcode/pd]`
 3. Create an object to check if it is working. Objects are typed as `[dc.objectNameHere]`
 
-Open the `drumcode-objects-overview.pd` to get an overview of available objects.
+- Open the `drumcode-objects-list.pd` to get a quick list of all available objects.
+- Open the `drumcode-objects-overview.pd` to get an overview of available objects with small examples and explanation.
+- Open some of the patches in the `/templates` folder to get some quick ways to start
+- Open the [getting started guide](./docs/getting-started.md) for a tutorial
 
 ## 🥁 Performances & Publications
 
@@ -90,6 +93,13 @@ Hoogland, T. (2023). './drum.code'. *AIMC 2023*. Retrieved from https://aimc2023
 - This project has been granted funding from [**Creative Industries Fund NL**](https://stimuleringsfonds.nl/en/)
 
 ![](/media/sci-logo.jpg)
+
+## 🙏 Thanks
+
+- [Fluid Corpus Manipulation Library](https://www.flucoma.org/) by Tremblay, P.A., Green, O., Roma, G., Bradbury, J., Moore, T., Hart, J., & Harker, A.
+- [ELSE Library](https://github.com/porres/pd-else/) by Alexandre Torres Porres
+- [Cyclone Library](https://github.com/porres/pd-cyclone) by Alexander Torres Porres
+- [PlugData](https://github.com/plugdata-team/plugdata) by Tim Schoen
 
 ## ✨ Inspiration & Reading
 
