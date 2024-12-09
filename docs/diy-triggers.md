@@ -6,7 +6,18 @@ You can buy these piezo discs for less than €1 per piece. And since we are mai
 
 In order to build your own triggers you will need to buy some additional things such as a cable, a jack (socket or plug) and possibly some tools for soldering, stripping the cable and so on. Below are lists of material needed with an example link, but depending on your location can also be bought in a local store.
 
+A piezo disc is "unbalanced", meaning it has only a + signal and a ground. Therefore we only need a TS Jack Socket or Plug (T = Tip, S = Sleeve).
+
+ A cable that has 2 wires is therefore sufficient to solder the piezo element with. 
+
 ## Gathering the materials
+
+Make sure you've bought the following materials to make your trigger with. I recommend buy a bit more of everything then needed, just in case something goes wrong along the way of soldering. And if everything goes well you can make multiple.
+
+- [Piezo disc]()
+- [Balanced cable]()(like a microphone cable, for XLR plugs)
+- [1/4" TS Jack Socket]()()
+- [Plastidip]()(optional for coating)
 
 ## Gathering the tools
 

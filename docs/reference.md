@@ -224,9 +224,27 @@ arguments:
 - (number) the highest possible value (default = 72)
 - (on/off) the random numbers are only whole numbers (default = true (1))
 
-<!-- ### `dc.sometimes` -->
+### `dc.chance`
 
-<!-- ### `dc.every` -->
+Let the input pass through to the output on the left outlet with a certain amount of chance between 0-100%. Every other case the input is passed to the right outlet. Default chance is 50%.
+
+inlets:
+1. (trigger/number) pass through to output with chance
+2. (number) chance percentage 0-100 (default = 50)
+
+arguments:
+- (number) chance percentage 0-100 (default = 50)
+
+### `dc.every`
+
+Let the input pass through to the output on the left outlet every n-events. Every other time the input is passed to the right outlet. The default every times is 8.
+
+inlets:
+1. (trigger/number) pass through to output every n-events
+2. (number) every time (default = 8)
+
+arguments:
+- (number) every time (default = 8)
 
 <!-- ### `dc.list.spread` -->
 
@@ -240,6 +258,21 @@ inlets:
 
 arguments:
 - (number) as many numbers you want to have part of the list
+
+## `dc.learn`
+
+This object learns a pattern from an incoming list of values and when send a trigger will play a pattern that is similar to the learned one. This is based on the probability of what is most likely to happen next. The learning is done through a Markov Chain, a probabilistic sequence prediction model. The default order of the chain is 2, but can be adjusted with -order attribute. A list send to the second inlet with clear the model and train on that list. A list send to the third inlet with add the list to the previous training.
+
+inlets:
+1. (trigger) predict the next value and output
+2. (list) clear and learn from incoming list pattern
+3. (number/list) add to the learned pattern, without clearing
+
+arguments:
+- (list) learn from list pattern
+
+attributes:
+- order - set the markov chain order (default = 2)
 
 <!-- ### `dc.scale` -->
 
