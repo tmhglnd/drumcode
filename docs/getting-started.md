@@ -78,6 +78,7 @@ After downloading, start PlugData. You can open a New Patch via the menu icon or
 
 - Samplerate: 44100
 - Buffersize: 64
+<!-- - DSP Block Size: 64 -->
 - Output Device: Choose your soundcard here
 	- Outputs: Make sure they are `Enabled`
 	- You can click `Test` to hear a short beep
@@ -95,6 +96,12 @@ Please also make sure you reset the shortcuts to Max default via the menu `Short
 Go back to the empty New Patch and click the "power" icon on the bottom right to make sure it is blue. This turns on the audio processing (called Digital Signal Processing or DSP).
 
 <img src="./images/img1-audio-on.png" width="40%"></img>
+
+### 7. Disable Limiter and Oversampling
+
+Also in the bottom right corner there are buttons for a Limiter and some settings such as the Threshold and so called Oversampling. Make sure you disable the Limiter and set the oversampling to `1x` (higher oversampling will increase the input/output latency, which can be in the way of your real-time interaction).
+
+<img src="./images/img7-oversampling.png" width="40%"></img>
 
 ## Receiving contact microphone input
 
