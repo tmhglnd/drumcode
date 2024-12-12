@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 96.0, 1073.0, 837.0 ],
+		"rect" : [ 34.0, 96.0, 1073.0, 599.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -110,7 +110,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 752.5, 450.0, 55.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "1 1 0 1 1"
 				}
 
@@ -438,8 +437,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.0, 555.0, 85.0, 35.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 325.0, 555.0, 89.0, 35.0 ],
 					"text" : "1 0 1 0 0 1 0 0 1 0 1 0 1 1 0 0"
 				}
 
@@ -524,7 +522,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 519.0, 375.0, 85.0, 35.0 ],
+					"patching_rect" : [ 519.0, 375.0, 89.0, 35.0 ],
 					"text" : "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 				}
 
@@ -689,7 +687,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 782.0, 96.0, 680.0, 837.0 ],
+						"rect" : [ 566.0, 96.0, 680.0, 599.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2005,7 +2003,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 782.0, 96.0, 680.0, 837.0 ],
+						"rect" : [ 89.0, 96.0, 680.0, 599.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2042,7 +2040,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 285.5, 810.0, 94.75, 33.0 ],
-									"presentation_linecount" : 2,
 									"text" : "output pattern every bar"
 								}
 
@@ -3300,7 +3297,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 285.0, 450.0, 85.0, 35.0 ],
+					"patching_rect" : [ 285.0, 450.0, 89.0, 35.0 ],
 					"text" : "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 				}
 

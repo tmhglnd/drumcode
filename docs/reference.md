@@ -92,8 +92,8 @@ inlets:
 arguments order:
 - (number) the wait time untill hit counts are reported, (default = 250ms, 8th note at 120bpm)
 
-attributes:
-- threshold : minimum hits necessary for reporting the output, (default = 1)
+<!-- attributes:
+- threshold : minimum hits necessary for reporting the output, (default = 1) -->
 
 ### `dc.speed`
 
@@ -126,7 +126,7 @@ inlets:
 1. (number) - time between triggers from `dc.timer`
 
 arguments:
-- (number) - threshold for speeding/slowing detection in ms (default = 20)
+- (number) - threshold for speeding/slowing detection in ms (default = 25)
 
 attributes:
 - mode : in mode 0 only a `0` or `1` are output for slowing down or speeding up. In mode 1 a `0.5` is output if the speed doesn't change.
