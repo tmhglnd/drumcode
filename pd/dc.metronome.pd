@@ -3,7 +3,7 @@
 #X declare -path cyclone;
 #X obj 279 329 !/ 1920;
 #X obj 59 410 int;
-#X obj 59 438 change;
+#X obj 59 441 change;
 #X obj 103 295 unpack f f;
 #X obj 103 329 %;
 #X obj 59 259 router;
@@ -23,6 +23,9 @@
 #X obj 59 198 receiver dc-transport;
 #X obj 59 166 prepend symbol;
 #X obj 59 380 / 480;
+#X obj 600 40 cnv 15 283 29 empty empty dc.metronome 20 13 0 20 #00deb1 #ffffff 0;
+#X text 599 79 The metronome outputs triggers and step-numbers in a specified time interval (2 \, 4 \, 8 \, 12 \, 16 \, etc) \, where this number means 1/n \, so 4 is 1/4 is a quarter note \, and 12 is 1/12 so 8th-note triplets. The counter of the step by default counts to infinite \, but you can make it wrap with n-bars by providing a second argument for the counter reset. This object only works if you already have a dc.transport in the patch., f 41;
+#X obj 112 410 loadmess set -1;
 #X connect 0 0 21 1;
 #X connect 1 0 2 0;
 #X connect 2 0 9 0;
@@ -46,3 +49,4 @@
 #X connect 19 0 5 0;
 #X connect 20 0 19 0;
 #X connect 21 0 1 0;
+#X connect 24 0 2 0;
