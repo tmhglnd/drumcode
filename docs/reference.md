@@ -209,6 +209,49 @@ arguments order:
 
 <!-- ### `dc.latency`  -->
 
+### `dc.transport`
+
+Create a global transport to set the BPM and Time Signature of the patch. Other objects can interface with the global transport, like the dc.sequencer. These objects are synchronised with the transport and start/stop when the transported is started.
+
+inlets:
+1. (toggle) start/stop transport
+2. (number) set the tempo in BPM (default = 100)
+3. (list) set the time signature (default = 4 4)
+
+arguments:
+- (number) set the tempo in BPM (default = 100)
+
+attributes:
+- timesig - set the time signature in the object
+
+messages:
+- reset - reset the transport to beginning, bar 1, beat 1
+
+### `dc.metronome`
+
+The metronome outputs triggers and step-numbers in a specified time interval (2, 4, 8, 12, 16, etc), where this number means 1/n, so 4 is 1/4 is a quarter note, and 12 is 1/12 so 8th-note triplets. The counter of the step by default counts to infinite, but you can make it wrap with n-bars by providing a second argument for the counter reset. This object only works if you already have a `[dc.transport]` in the patch.
+
+inlets:
+1. (number) division (2, 4, 8, 12, 16, etc) (default = 4, quarter note)
+
+arguments:
+- (number) division (2, 4, 8, 12, 16, etc) (default = 4, quarter note)
+- (number) reset counter after n-bars (default = 0, no reset)
+
+### `dc.clicktrack~`
+
+A clicktrack~ object that outputs bleeps for quarter and eigth notes with an accent on the first note of the measure. You can set the eight note volume and adjust the beep length. Combine this object with dc.transport for it to work. I recommend sending it to [dac~ 3 4] so you can hear it at a different output from your soundcard and not have it mixed with your music that goes to the main speakers.
+
+inlets:
+1. (number) eigth note volume 0-127 (default = 0)
+2. (number) tone length 0-127 (default = 80)
+3. (list) list of two notes for accent and regular tone (default = A6 D6)
+
+arguments:
+- (number) eigth note volume 0-127 (default = 0)
+- (number) tone length 0-127 (default = 80)
+- (list) list of two notes for accent and regular tone (default = A6 D6)
+
 ## Pitch, Timbre, Descriptors
 
 (coming soon...)
