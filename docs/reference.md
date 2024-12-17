@@ -223,6 +223,7 @@ arguments:
 
 attributes:
 - timesig - set the time signature in the object
+- name - give a unique name to the transport (optional)
 
 messages:
 - reset - reset the transport to beginning, bar 1, beat 1
@@ -238,6 +239,9 @@ arguments:
 - (number) division (2, 4, 8, 12, 16, etc) (default = 4, quarter note)
 - (number) reset counter after n-bars (default = 0, no reset)
 
+attributes:
+- name - bind to unique name of the transport (optional)
+
 ### `dc.clicktrack~`
 
 A clicktrack~ object that outputs bleeps for quarter and eigth notes with an accent on the first note of the measure. You can set the eight note volume and adjust the beep length. Combine this object with dc.transport for it to work. I recommend sending it to [dac~ 3 4] so you can hear it at a different output from your soundcard and not have it mixed with your music that goes to the main speakers.
@@ -251,6 +255,9 @@ arguments:
 - (number) eigth note volume 0-127 (default = 0)
 - (number) tone length 0-127 (default = 80)
 - (list) list of two notes for accent and regular tone (default = A6 D6)
+
+attributes:
+- name - bind to unique name of the transport (optional)
 
 ## Pitch, Timbre, Descriptors
 
