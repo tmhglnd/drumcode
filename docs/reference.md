@@ -456,6 +456,17 @@ arguments:
 - (number) feedback 0 - 127 (default = 90)
 - (number) damping 0 - 127 (default = 70)
 
+### `dc.fx.degrade~`
+
+A degrading filter effect, giving a "8bit style" to the sound. Consisting of a downsampling algorithm. The parameter ranges from 0-127 for ease of use with MIDI values.
+
+inlets:
+1. (signal) sound to be degraded
+2. (number) degrading amount 0-127 (default = 64)
+
+arguments:
+- (number) degrading amount 0-127 (default = 64)
+
 ### `dc.fx.distortion~`
 
 A distortion effect in an "analog soft-clipping style". The distortion amount is set in a range from 0-127 for ease of use with MIDI values.

@@ -206,6 +206,17 @@
 #X text 798 2045 input if not passed;
 #X obj 1009 2046 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737;
 #X text 1037 2045 input every other time;
+#X obj 1056 1830 dac~;
+#X text 1096 1782 use gain2~ for stereo gain slider;
+#X obj 1139 1573 hsl 128 17 0 127 0 1 empty empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #000000 10378 1;
+#X obj 1060 1500 dc.noise~;
+#X obj 1060 1618 dc.fx.degrade~;
+#X obj 1061 1699 gain~ 1 0 20 0 0.880638;
+#A saved;
+#X text 1166 1629 a degrading effect creating an 8bit sound, f 20;
+#X text 1136 1552 degrading amount;
+#X obj 1060 1466 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737;
+#X text 1139 1499 play filtered noise;
 #X connect 1 0 13 0;
 #X connect 4 0 1 0;
 #X connect 5 0 7 0;
@@ -313,3 +324,9 @@
 #X connect 192 0 191 0;
 #X connect 192 1 196 0;
 #X connect 193 0 192 1;
+#X connect 200 0 202 1;
+#X connect 201 0 202 0;
+#X connect 202 0 203 0;
+#X connect 203 0 198 0;
+#X connect 203 0 198 1;
+#X connect 206 0 201 0;
