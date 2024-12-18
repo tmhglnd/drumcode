@@ -441,6 +441,21 @@ inlets:
 arguments:
 - (path) a filepath to a folder to load samples from
 
+### `dc.noise~`
+
+A polyphonic filtered whitenoise synth. Used to created more percussive sounds with some simple filtered noise and an attack and decay. Snare-dum-ish or hihat-ish sounds can be created.
+
+inlets:
+1. (trigger/number) Velocity triggers the noise (0-127) (default = 120)
+2. (number) noise length amount 0-127 (default = 30)
+3. (number) filter cutoff 0-127 (default = 70)
+4. (number) filter resonance 0-127 (default = 40)
+
+arguments:
+- (number) noise length amount 0-127 (default = 30)
+- (number) filter cutoff 0-127 (default = 70)
+- (number) filter resonance 0-127 (default = 40)
+
 ### `dc.fx.delay~`
 
 A delay effect in an "analog tape style" consisting of a delaytime, feedback amount and a damping filter. All the parameters range from 0-127 for ease of use with MIDI values.
