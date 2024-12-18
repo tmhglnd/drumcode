@@ -11,10 +11,11 @@ A rough outline of the different type of objects in this library:
 - [Audio Analysis](#audio-analysis)
 - [Time, Tempo, Density](#time-tempo-density)
 - [Pitch, Timbre, Descriptors](#pitch-timbre-descriptors)
-- [Utilities](#utilites)
-- [Generators, Algorithms & Sequences](#generators-algorithms--sequences)
+- [Metronome, Sequencing & Utilities](#metronome-sequencing--utilities)
+- [Generators, Algorithms & Patterns](#generators-algorithms--sequences)
 - [MIDI & OSC Output](#midi--osc-output)
 - [Sound Output](#sound-output)
+- [PlugData Useful Common Objects](#plugdata-useful-common-objects)
 
 ## Audio Analysis
 
@@ -131,7 +132,7 @@ arguments:
 attributes:
 - mode : in mode 0 only a `0` or `1` are output for slowing down or speeding up. In mode 1 a `0.5` is output if the speed doesn't change.
 
-## Utilites
+## Metronome, Sequencing & Utilities
 
 ### `dc.calibrate`
 
@@ -263,7 +264,7 @@ attributes:
 
 (coming soon...)
 
-## Generators, Algorithms & Sequences
+## Generators, Algorithms & Patterns
 
 Use the following objects to generate sequences of values, for example for MIDI notes, velocities or modulations. You can generate things randomly, create a specific sequence of values, train a simple model to learn from a sequence, and do some things algorithmically with chance over counting.
 
@@ -520,3 +521,31 @@ arguments:
 - (number) brightness 0 - 127 ( default = 40)
 
 <!-- ### `dc.synth~` -->
+
+## PlugData Useful Common Objects
+
+There are many objects already in PlugData (and PureData) by default. Either by being part of the default application, or via some other libraries such as Cyclone and ELSE. These objects can be very useful as well when patching on projects with drumcode. Some of these objects are already in use throughout the examples and templates. These objects are listed below:
+
+### `adc~` & `dac~`
+
+### `meter~` & `scope~`
+
+### `gain~` & `gain2~`
+
+### button `bng` (b) & toggle `tgl` (t)
+
+### `hslider` & `vslider`
+
+### `+`, `-`, `*`, `/`
+
+### number `floatbox` (f)/(i)
+
+### message `msg` (m)
+
+### `scale`
+
+### `select`
+
+### `counter`
+
+### `gate`
