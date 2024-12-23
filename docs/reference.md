@@ -119,6 +119,9 @@ A simple taptempo feature. Input a trigger. If the triggers are received within 
 inlets:
 1. (trigger) estimate the tempo
 
+arguments:
+- (number) history size to take average from (default = 4)
+
 ### `dc.direction`
 
 Measure in which direction the tempo of a trigger is going. Speeding up (1) or slowing down (0). With an optional argument you can set the threshold for which a speeding/slowing tempo is detected, the default is above 20 milliseconds. You can also change the -mode to 1, in mode 1 the measure outputs a 0.5 if the tempo is not changing.

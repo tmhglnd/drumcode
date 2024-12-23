@@ -12,7 +12,6 @@
 #X text 473 201 Default list is a simple major scale upwards;
 #X obj 59 319 zl.lookup;
 #X obj 193 260 zl.len;
-#X obj 59 59 inlet (trigger/number) next step in sequence \, or go to number;
 #X obj 59 372 outlet (number) output the number in the sequence on that step;
 #X obj 260 99 inlet (list) input a list of numbers for the sequence (maximum size 256), f 25;
 #X msg 117 177 0;
@@ -20,6 +19,7 @@
 #X text 473 237 Arguments: a custom list to use as output;
 #X obj 473 319 declare -path else;
 #X obj 473 355 declare -path cyclone;
+#X obj 59 59 inlet (trigger/number) next step in sequence \, or go to index;
 #X connect 0 0 1 1;
 #X connect 1 0 0 0;
 #X connect 1 0 2 0;
@@ -29,9 +29,9 @@
 #X connect 4 0 5 0;
 #X connect 5 0 3 0;
 #X connect 6 0 4 0;
-#X connect 9 0 12 0;
+#X connect 9 0 11 0;
 #X connect 10 0 2 1;
-#X connect 11 0 1 0;
-#X connect 13 0 5 0;
-#X connect 13 0 14 0;
-#X connect 14 0 1 1;
+#X connect 12 0 5 0;
+#X connect 12 0 13 0;
+#X connect 13 0 1 1;
+#X connect 18 0 1 0;
