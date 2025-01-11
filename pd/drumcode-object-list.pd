@@ -51,4 +51,6 @@
 #X obj 302 565 dc.metronome;
 #X obj 302 596 dc.clicktrack~;
 #X obj 302 502 dc.hold;
+#X obj 302 651 dc.trigger.display;
+#X text 302 628 [dc.trigger.display];
 #X connect 43 0 42 0;

@@ -43,6 +43,10 @@ attributes:
 - release : the release time for the envelope follower (default = 15 ms)
 - slowramp : the attack and release time for the slow envelope follower (default = 27 ms)
 
+### `dc.trigger.display`
+
+This is a little display that can be connected to the outlet of the `dc.trigger~`. The display shows the incoming signals amplitude and two lines. The upper line is the on-threshold, determined by the sensitivity. The lower line is the off-threshold, determined by the sensitivity range. If the signal goes above the upper line a trigger is detected. If the signal goes below the lower line a next trigger can be detected again.
+
 ### `dc.trigger.frame~`
 
 Capture a short frame of sound when the trigger is detected. This short frame of sound can be used to analyse for various sound descriptors such as pitch, loudness, spectral centroid, noisiness, timbre (mfcc) and more. Connect the trigger to the right inlet and connect the sound to the left inlet.
