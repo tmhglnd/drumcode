@@ -1,5 +1,6 @@
 #N canvas 827 239 527 327 12;
 #X declare -path else;
+#X declare -path cyclone;
 #X obj 59 439 netsend -u -b;
 #X obj 278 89 loadbang;
 #X obj 278 127 t b b;
@@ -21,6 +22,7 @@
 #X obj 348 280 unpack s f;
 #X obj 297 347 pak localhost 4880;
 #X obj 59 125 route host port;
+#X obj 482 410 declare -path cyclone;
 #X connect 1 0 2 0;
 #X connect 2 0 12 0;
 #X connect 2 1 4 0;
