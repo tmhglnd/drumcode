@@ -103,7 +103,7 @@ Hoogland, T. (2023). './drum.code'. *AIMC 2023*. Retrieved from https://aimc2023
 
 ## ✨ Inspiration & Reading
 
-For this project I've found inspiration in many different places, from different artists, coders, musicians, papers, you name it.
+For this project I've found inspiration in many different places, such as from different artists, coders, musicians, papers, and more. Thanks to all the great people working in this field for inspiring me.
 
 - [The Fluid Corpus Manipulation Project](https://www.flucoma.org/) 
 	- Machine Learning/Listening, Software Library
