@@ -9,7 +9,7 @@
 #X msg 139 221 -wait \$1;
 #X floatatom 139 191 5 0 0 0 - - - 12;
 #X obj 479 59 adc~ 1;
-#X obj 599 59 dc.audio.onoff~;
+#X obj 578 59 dc.audio.onoff~;
 #X obj 479 97 meter~;
 #X obj 179 330 dc.trigger.frame~;
 #X obj 179 280 adc~ 1;

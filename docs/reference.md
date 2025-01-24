@@ -47,6 +47,19 @@ attributes:
 
 This is a little display that can be connected to the outlet of the `dc.trigger~`. The display shows the incoming signals amplitude and two lines. The upper line is the on-threshold, determined by the sensitivity. The lower line is the off-threshold, determined by the sensitivity range. If the signal goes above the upper line a trigger is detected. If the signal goes below the lower line a next trigger can be detected again.
 
+### `dc.trigger.velocity~`
+
+Output the measured velocity from a trigger detection. The velocity is output as a value between 1 and 127 Depending on the incoming sound the scaling may need to be adjusted. This can be done by enabling the calibration in the third inlet. The velocity curve can also be set with the message -curve or attribute. The trigger is also passed to the left outlet to make sure things stay syncronized. This is because the amplitude measure takes a little time (~3ms) to gather some sound and measure the peak amplitude.
+
+inlets:
+1. (signal) audio input from adc~/meter~
+2. (trigger) trigger signal input from dc.trigger~
+3. (toggle) enable calibration
+
+attributes:
+- curve - adjust the velocity curve between 0 and 1 (default=0.7)
+- history - adjust the measure time in milliseconds, this adds latency (default=2.5)
+
 ### `dc.trigger.frame~`
 
 Capture a short frame of sound when the trigger is detected. This short frame of sound can be used to analyse for various sound descriptors such as pitch, loudness, spectral centroid, noisiness, timbre (mfcc) and more. Connect the trigger to the right inlet and connect the sound to the left inlet.
