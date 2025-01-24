@@ -55,7 +55,7 @@
 #X floatatom 942 145 5 0 0 0 - - - 12;
 #X msg 941 176 -wait \$1;
 #X obj 803 674 dc.synth~;
-#X obj 804 710 gain~ 1 0 20 0 1;
+#X obj 804 710 gain~ 1 0 20 0 0;
 #A saved;
 #X obj 799 880 dac~;
 #X msg 803 560 48;

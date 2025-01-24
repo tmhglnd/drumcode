@@ -156,7 +156,7 @@ attributes:
 
 ### `dc.calibrate`
 
-Automatically rescale the incoming values to an output range based on the highest and lowest values received. This range auto-adapts when higher or lower numbers are received. The output range is 0-1 by default but can be adjust with arguments. The output-range is also clipped between the lowest and highest value of the set range
+Rescale the incoming values to an output range based on the highest and lowest values received. This range auto-adapts when the calibration is turned on in the right inlet. Higher or lower numbers are received and measured. The output range is 0-1 by default but can be adjust with arguments.
 
 inlets:
 1. (number) incoming value to automatically rescale
