@@ -34,7 +34,7 @@
 #X obj 831 320 dc.fx.delay~;
 #X obj 831 379 dc.fx.distort~;
 #X obj 831 410 dc.fx.filter~;
-#X obj 831 443 dc.fx.reverb~;
+#X obj 831 441 dc.fx.reverb~;
 #X text 38 276 Audio Analysis, f 8;
 #X text 187 261 Tempo \, Timing \, Density, f 8;
 #X text 351 291 Utilities;
@@ -55,4 +55,5 @@
 #X text 351 628 [dc.trigger.display];
 #X obj 38 350 dc.trigger.velocity~;
 #X obj 351 768 dc.peak~;
+#X obj 831 471 dc.fx.drywet~;
 #X connect 43 0 42 0;

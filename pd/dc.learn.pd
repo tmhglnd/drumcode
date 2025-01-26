@@ -3,10 +3,10 @@
 #X declare -path cyclone;
 #X obj 600 59 cnv 15 283 29 empty empty dc.learn 20 13 0 20 #00deb1 #ffffff 0;
 #X obj 59 354 markov 1 1;
-#A saved memory 60 ||| \; 62 ||| \; 63 ||| \; 64 ||| \; 66 ||| \; 67 ||| \;;
+#A saved memory 62 ||| \; 63 ||| \; 65 ||| \; 67 ||| \; 72 ||| \; 60 ||| \; 69 ||| \; 70 ||| \;;
 #A saved order 2;
-#A saved markov 4 5 0 3 \; 5 0 1 \; 0 1 2 2 \; 1 2 0 0 \; 2 0 0 3 \; 0 0 1 \; 0 3 4 \; 3 4 5 5 \; 5 3 4 \;;
-#A saved indices 0 1 2 0 0 1 2 0 3 4 5 3 4 5;
+#A saved markov 1 1 0 \; 1 0 1 5 \; 0 1 2 \; 1 2 3 \; 2 3 2 4 \; 3 2 3 \; 3 4 1 \; 4 1 0 \; 0 5 1 \; 5 1 5 1 \; 1 5 6 \; 5 6 7 \; 6 7 4 \; 7 4 5 \; 4 5 5 \; 5 5 1 \;;
+#A saved indices 0 1 2 3 2 3 4 1 0 5 1 5 6 7 4 5 5 1 1;
 #X obj 233 220 iter;
 #X msg 119 220 create;
 #X msg 178 220 clear;
@@ -28,6 +28,7 @@
 #X obj 119 89 inlet (list) clear and learn from incoming list pattern;
 #X obj 221 121 inlet (number/list) add to the learned pattern \, without clearing;
 #X obj 233 279 loadmess 2;
+#X obj 59 89 t b;
 #X connect 1 0 11 0;
 #X connect 2 0 1 1;
 #X connect 3 0 1 0;
@@ -41,7 +42,8 @@
 #X connect 12 0 13 0;
 #X connect 13 0 1 2;
 #X connect 13 1 5 0;
-#X connect 19 0 1 0;
+#X connect 19 0 23 0;
 #X connect 20 0 5 0;
 #X connect 21 0 6 0;
 #X connect 22 0 1 2;
+#X connect 23 0 1 0;
