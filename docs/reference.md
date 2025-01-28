@@ -338,6 +338,17 @@ inlets:
 arguments:
 - (number) as many numbers you want to have part of the list
 
+### `dc.choose`
+
+Randomly choose a value from a list of predefined numbers for every time the object receives a trigger. The list can be defined as arguments or via the right inlet.
+
+inlets:
+1. (trigger/number) randomly choose the next value
+2. (list) input a list of numbers for the sequence
+
+arguments:
+- (number) as many numbers you want to have part of the list
+
 ### `dc.learn`
 
 This object learns a pattern from an incoming list of values and when send a trigger will play a pattern that is similar to the learned one. This is based on the probability of what is most likely to happen next. The learning is done through a Markov Chain, a probabilistic sequence prediction model. The default order of the chain is 2, but can be adjusted with -order attribute. A list send to the second inlet with clear the model and train on that list. A list send to the third inlet with add the list to the previous training.
@@ -477,6 +488,27 @@ arguments:
 - (number) filter cutoff 0-127 (default = 70)
 - (number) filter resonance 0-127 (default = 40)
 
+### `dc.gain~`
+
+A stereo gain slider. As an alternative for the gain~ and gain2~ sliders, because those sometimes hang in Plugdata.
+
+inlets:
+1. (signal) left signal to gain
+2. (signal) right signal to gain
+
+### `dc.fade~`
+
+Fade a (stereo) signal in or out. The fade in/out can be started with a trigger (switching between states) or it can be forced with a toggle or the number 0 or 1 The 4th inlet allows you to set the fade time in milliseconds with a number. The fade has a cubic ramp.
+
+inlets:
+1. (signal) left signal to fade
+2. (signal) right signal to fade
+3. (trigger/number) trigger switches signal on/off, 1 turns on, 0 turns off
+4. (number) fade time in milliseconds (default = 25)
+
+arguments:
+- (number) fade time in milliseconds (default = 25)
+
 ### `dc.fx.delay~`
 
 A delay effect in an "analog tape style" consisting of a delaytime, feedback amount and a damping filter. All the parameters range from 0-127 for ease of use with MIDI values.
@@ -569,3 +601,5 @@ There are many objects already in PlugData (and PureData) by default. Either by 
 ### `counter`
 
 ### `gate`
+
+### `switch`

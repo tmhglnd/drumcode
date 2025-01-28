@@ -59,4 +59,5 @@
 #X obj 709 492 dc.gain~;
 #X text 709 470 [dc.gain~];
 #X obj 709 441 dc.fade~;
+#X obj 468 471 dc.choose;
 #X connect 43 0 42 0;
