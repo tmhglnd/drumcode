@@ -56,4 +56,7 @@
 #X obj 38 350 dc.trigger.velocity~;
 #X obj 351 768 dc.peak~;
 #X obj 831 471 dc.fx.drywet~;
+#X obj 709 492 dc.gain~;
+#X text 709 470 [dc.gain~];
+#X obj 709 441 dc.fade~;
 #X connect 43 0 42 0;
