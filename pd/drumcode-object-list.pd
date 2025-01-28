@@ -31,10 +31,10 @@
 #X obj 709 320 dc.synth~;
 #X obj 709 379 dc.sample~;
 #X obj 709 410 dc.sampler~;
-#X obj 831 320 dc.fx.delay~;
-#X obj 831 379 dc.fx.distort~;
-#X obj 831 410 dc.fx.filter~;
-#X obj 831 441 dc.fx.reverb~;
+#X obj 831 349 dc.fx.delay~;
+#X obj 831 408 dc.fx.distort~;
+#X obj 831 439 dc.fx.filter~;
+#X obj 831 470 dc.fx.reverb~;
 #X text 38 276 Audio Analysis, f 8;
 #X text 187 261 Tempo \, Timing \, Density, f 8;
 #X text 351 291 Utilities;
@@ -46,7 +46,7 @@
 #X msg 301 180 browse https://github.com/tmhglnd/drumcode/blob/main/docs/reference.md, f 66;
 #X text 302 159 please see the reference for detailed explanations or object-overview for small examples, f 77;
 #X obj 709 349 dc.noise~;
-#X obj 831 349 dc.fx.degrade~;
+#X obj 831 378 dc.fx.degrade~;
 #X obj 351 533 dc.transport;
 #X obj 351 565 dc.metronome;
 #X obj 351 596 dc.clicktrack~;
@@ -55,7 +55,7 @@
 #X text 351 628 [dc.trigger.display];
 #X obj 38 350 dc.trigger.velocity~;
 #X obj 351 768 dc.peak~;
-#X obj 831 471 dc.fx.drywet~;
+#X obj 831 320 dc.fx.drywet~;
 #X obj 709 492 dc.gain~;
 #X text 709 470 [dc.gain~];
 #X obj 709 441 dc.fade~;
