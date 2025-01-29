@@ -1,5 +1,6 @@
 #N canvas 827 239 734 565 12;
 #X declare -path else;
+#X declare -path cyclone;
 #X obj 59 399 plate.rev~;
 #X msg 103 329 pre \$1;
 #X msg 321 333 cutoff \$1;
@@ -14,8 +15,8 @@
 #X obj 493 458 declare -path else;
 #X obj 639 58 cnv 15 283 29 empty empty dc.fx.reverb~ 20 13 0 20 #00deb1 #ffffff 0;
 #X text 639 101 A reverb effect in an "plate style" consisting of a roomsize and a brightness/damping filter. All the parameters range from 0-127 for ease of use with MIDI values., f 41;
-#X obj 59 458 outlet~ (signal) left reverb output;
-#X obj 103 499 outlet~ (signal) right reverb output;
+#X obj 59 478 outlet~ (signal) left reverb output;
+#X obj 137 516 outlet~ (signal) right reverb output;
 #X obj 59 58 inlet~ (signal) sound to be reverberated;
 #X obj 499 59 loadbang;
 #X obj 499 93 args;
@@ -23,8 +24,11 @@
 #X obj 182 123 inlet (number) roomsize 0 - 127 (default = 40), f 17;
 #X obj 321 123 inlet (number) brightness 0 - 127 ( default = 40), f 19;
 #X obj 499 122 default 40 40;
-#X connect 0 0 14 0;
-#X connect 0 1 15 0;
+#X obj 59 440 hip~ 100;
+#X obj 137 440 hip~ 100;
+#X obj 493 487 declare -path cyclone;
+#X connect 0 0 23 0;
+#X connect 0 1 24 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
 #X connect 3 0 0 0;
@@ -44,3 +48,5 @@
 #X connect 20 0 9 0;
 #X connect 21 0 10 0;
 #X connect 22 0 19 0;
+#X connect 23 0 14 0;
+#X connect 24 0 15 0;

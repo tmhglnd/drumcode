@@ -42,12 +42,14 @@
 #X restore 229 353 pd set_color;
 #X obj 59 59 tgl 25 0 \$0-tgl-s \$0-tgl-r empty 17 7 0 10 #e4e4e4 #7c7c7c #fcfcfc 0 1;
 #X obj 87 59 cnv 25 87 25 empty \$0-cnv sound\ off 6 12 0 18 #e4e4e4 #7c7c7c 0;
+#X obj 242 312 outlet (toggle) 0 when sound off\\\, 1 when sound on;
 #X connect 0 0 1 0;
 #X connect 2 0 6 0;
 #X connect 3 0 6 0;
 #X connect 5 0 4 0;
 #X connect 6 0 5 0;
 #X connect 6 0 11 0;
+#X connect 6 0 14 0;
 #X connect 7 0 2 0;
 #X connect 8 0 3 0;
 #X coords 0 0 1 1 119 29 2 57 57;
