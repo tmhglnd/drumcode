@@ -168,6 +168,17 @@ arguments:
 attributes:
 - name - give a unique name linked to a dc.transport (optional)
 
+### `dc.rhythm.match`
+
+Match a list of input rhythm with a set of predefined rhythms. If the rhythm is part of the set it will output the corresponding index of that rhythm. Multiple rhyhtms can be provided as a list of 0's and 1's. If the rhythm to match is shorter than the incoming list, the incoming list is sliced and only the last part it is used. For example if the matched rhythm is [1 0 1 1], and the input list is [1 0 0 1 1 0 1 1] the output will still return true (1) because the final 4 values are the same. If you need an exact match you can instead use `[zl.compare]` from the cyclone library.
+
+inlets:
+1. (list) a pattern to match with the provided options
+2. (list) insert a list to add to match options
+
+arguments:
+- (list) initial list to match rhythm to (default = none)
+
 ## Metronome, Sequencing & Utilities
 
 ### `dc.calibrate`

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 267.0, 241.0, 1073.0, 599.0 ],
+		"rect" : [ 331.0, 279.0, 1073.0, 599.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -93,7 +93,7 @@
 				"box" : 				{
 					"id" : "obj-178",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 726.5, 540.0, 47.0, 22.0 ],
@@ -2013,7 +2013,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 89.0, 96.0, 680.0, 599.0 ],
+						"rect" : [ 782.0, 135.0, 680.0, 599.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2041,6 +2041,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
@@ -3307,7 +3308,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 285.0, 450.0, 89.0, 35.0 ],
-					"text" : "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+					"text" : "1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 				}
 
 			}
@@ -4344,15 +4345,15 @@
 			}
 , 			{
 				"name" : "dc.step.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/drumcode/patchers",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Library/abstractions/drumcode/patchers",
+				"bootpath" : "~/Documents/Max 8/Library/abstractions/drumcode-max/patchers",
+				"patcherrelativepath" : "../../../../../Documents/Max 8/Library/abstractions/drumcode-max/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dc.trigger~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/abstractions/drumcode/patchers",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Library/abstractions/drumcode/patchers",
+				"bootpath" : "~/Sync/work/projects/drumcode/max",
+				"patcherrelativepath" : "../max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
