@@ -152,6 +152,22 @@ arguments:
 attributes:
 - mode : in mode 0 only a `0` or `1` are output for slowing down or speeding up. In mode 1 a `0.5` is output if the speed doesn't change.
 
+### `dc.rhythm.analyse`
+
+Analyse an incoming rhythmical pattern from triggers. The rhythm is quantised to a fixed interval, for example 16th or 8th notes. The tempo is determined by the BPM set in the dc.transport. Therefore a dc.transport is needed to make this object function properly. The rhythm that is output is a list of 1's and 0's where 1 is a detected onset and 0 is a detected rest (nothing detected). The object can output the "rolling" rhythm, a continues output for every note, or a fixed interval based on the output listlength.
+
+inlets:
+1. (trigger) input a trigger from dc.trigger~ or dc.trigger.velocity~
+2. (number) subdivision quantization for pattern detection (default = 16)
+3. (number) report interval and list output length (default = 16)
+
+arguments:
+- (number) subdivision quantization for pattern detection (default = 16)
+- (number) report interval and list output length (default = 16)
+
+attributes:
+- name - give a unique name linked to a dc.transport (optional)
+
 ## Metronome, Sequencing & Utilities
 
 ### `dc.calibrate`
