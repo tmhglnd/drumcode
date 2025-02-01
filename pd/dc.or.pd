@@ -1,0 +1,12 @@
+#N canvas 827 239 734 565 12;
+#X obj 59 59 inlet (toggle) input a toggle 0-1;
+#X obj 80 97 inlet (toggle) input a second toggle 0-1;
+#X obj 59 141 pak i i;
+#X obj 59 174 ||;
+#X obj 59 213 outlet (toggle) output 1 if left OR right is 1;
+#X obj 339 59 cnv 15 283 29 empty empty dc.or 20 13 0 20 #00deb1 #ffffff 0;
+#X text 339 96 OR is a expression that outputs a 0 or 1 (toggle) based on the left and right input. If left OR right is 1 the output will be also 1 If both are 0 the output is 0 If both are 1 the output is one. Use this object when you want to control turning on/off instruments/effects (for example with dc.fade~), f 43;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
