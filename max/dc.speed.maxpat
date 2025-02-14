@@ -56,10 +56,10 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 117.0, 240.0, 83.0, 22.0 ],
-					"text" : "split 40. 2000."
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 117.0, 240.0, 80.0, 22.0 ],
+					"text" : "clip 40. 2000."
 				}
 
 			}
@@ -231,7 +231,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 45.0, 45.0, 30.0, 30.0 ]
 				}
 
