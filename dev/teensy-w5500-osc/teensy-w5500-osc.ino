@@ -20,11 +20,15 @@
 
 EthernetUDP Udp;
 
+// custom MAC address
 byte mac[] = { 0xCA, 0xFE, 0xCA, 0xFE, 0xCA, 0xFE };
+// static ip address, make sure laptop and teensy are in the same network!
 IPAddress ip(169, 254, 241, 145);
-unsigned int port = 9023;
+// the port we are using to send to
+unsigned int port = 9090;
 
-// char packetBuffer[UDP_TX_PACKET_MAX_SIZE]; // is this needed?
+// this is maybe not needed?
+// char packetBuffer[UDP_TX_PACKET_MAX_SIZE]; 
 
 void setup() {
   Serial.begin(9600);
