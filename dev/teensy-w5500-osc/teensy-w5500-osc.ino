@@ -1,3 +1,12 @@
+// 
+// Teensy receiving OSC-Messages through W5500 Module
+// A study on how to use the W5500 Ethernet Module
+// and sending OSC-messages via UDP to the Teensy
+// 
+// written by Roald van Dillewijn & Timo Hoogland
+// for the ./drum.code project
+// funded by Creative Industries Fund NL
+// 
 
 // Libraries for Ethernet and OSC messages
 #include <SPI.h>
