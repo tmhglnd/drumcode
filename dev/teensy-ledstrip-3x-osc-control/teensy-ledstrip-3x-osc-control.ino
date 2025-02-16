@@ -32,6 +32,14 @@
 // | MiSo    | Data in     | 12  |
 // | SCLK    | Clock       | 13  |
 
+// Wiring for WS2812B Led Strip:
+// Use external power supply 5V 7A (or more depending on the amount of LEDs)
+// A WS12812 led ~36mA, so a strip is ~2.16A
+// V+ to Red wire
+// V- to White wire
+// 1000uF Capacitor between V+ and V-, close to led strip connection
+// Teensy data pin (3) to Green wire with 470ohm resistor close to led strip
+
 EthernetUDP Udp;
 
 // custom MAC address
