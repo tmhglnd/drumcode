@@ -42,7 +42,7 @@
 				"box" : 				{
 					"comment" : "(signal) the clicktrack sound",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -115,7 +115,7 @@
 				"box" : 				{
 					"comment" : "(list) list of two notes for accent and regular tone (default = 98 86)",
 					"id" : "obj-110",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -143,7 +143,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 45.0, 83.0, 22.0 ],
+					"patching_rect" : [ 45.0, 45.0, 97.0, 22.0 ],
 					"text" : "r #0_transport"
 				}
 
@@ -154,7 +154,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 353.0, 180.0, 85.0, 22.0 ],
+					"patching_rect" : [ 353.0, 180.0, 99.0, 22.0 ],
 					"text" : "s #0_transport"
 				}
 
@@ -199,7 +199,7 @@
 				"box" : 				{
 					"comment" : "(number) off-beat note volume 0-127 (default = 90)",
 					"id" : "obj-101",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -276,7 +276,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 188.0, 465.0, 32.0, 22.0 ],
-					"text" : "f 0.5"
+					"text" : "f 0.4"
 				}
 
 			}
@@ -464,7 +464,7 @@
 				"box" : 				{
 					"comment" : "(number) tone length 0-127 (default = 80)",
 					"id" : "obj-12",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -908,9 +908,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

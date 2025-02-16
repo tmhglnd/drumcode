@@ -295,12 +295,12 @@ attributes:
 A clicktrack~ object that outputs bleeps for quarter and eigth notes with an accent on the first note of the measure. You can set the eight note volume and adjust the beep length. Combine this object with dc.transport for it to work. I recommend sending it to [dac~ 3 4] so you can hear it at a different output from your soundcard and not have it mixed with your music that goes to the main speakers.
 
 inlets:
-1. (number) eigth note volume 0-127 (default = 0)
+1. (number) off-beat note volume 0-127 (default = 80)
 2. (number) tone length 0-127 (default = 80)
 3. (list) list of two notes for accent and regular tone (default = A6 D6)
 
 arguments:
-- (number) eigth note volume 0-127 (default = 0)
+- (number) off-beat note volume 0-127 (default = 0)
 - (number) tone length 0-127 (default = 80)
 - (list) list of two notes for accent and regular tone (default = A6 D6)
 
