@@ -93,13 +93,21 @@ void oscMessageReceiver() {
       msgIn.fill(Udp.read());
     if (!msgIn.hasError()) {
       // if no error detected route the message to callback function
-      msgIn.dispatch("/strip/1", ledStripColor<0>);
-      msgIn.dispatch("/strip/2", ledStripColor<1>);
-      msgIn.dispatch("/strip/3", ledStripColor<2>);
+      msgIn.dispatch("/strip/1/rgb", ledStripColor<0>);
+      msgIn.dispatch("/strip/2/rgb", ledStripColor<1>);
+      msgIn.dispatch("/strip/3/rgb", ledStripColor<2>);
       // blackout a ledstrip completely
       msgIn.dispatch("/strip/1/black", ledStripBlack<0>);
       msgIn.dispatch("/strip/2/black", ledStripBlack<1>);
       msgIn.dispatch("/strip/3/black", ledStripBlack<2>);
+      // set brightness for white of whole strip
+      msgIn.dispatch("/strip/1/white", ledStripWhite<0>);
+      msgIn.dispatch("/strip/2/white", ledStripWhite<1>);
+      msgIn.dispatch("/strip/3/white", ledStripWhite<2>);
+      // set color of the strip based on variable length list of rgbrgbrgb
+      msgIn.dispatch("/strip/1/pixel", ledStripRGB<0>);
+      msgIn.dispatch("/strip/2/pixel", ledStripRGB<1>);
+      msgIn.dispatch("/strip/3/pixel", ledStripRGB<2>);
     } else {
       // otherwise print error
       Serial.println("Error in OSC Message");
@@ -107,29 +115,58 @@ void oscMessageReceiver() {
   }
 }
 
-// Callback method for variable ledStrip to set the Color
-template <int numStrip> void ledStripColor(OSCMessage &msg) {
+// Function to set the whole strip to a single Color
+template <int strip> void ledStripColor(OSCMessage &msg) {
   // the size of the message
   int size = msg.size();
-  // go over every item in the message
-  for (int i = 0; i < size; i++){
+  // if the message has 3 items (R G B)
+  if (size >= 3){
     // adjust the color for all the LEDs
-    // order of values: R G B
-    for (int l = 0; l < NUM_LEDS; l++){
-      switch(i % 3){
-        case 0 : leds[numStrip][l].r = msg.getInt(i);
-        case 1 : leds[numStrip][l].g = msg.getInt(i);
-        case 2 : leds[numStrip][l].b = msg.getInt(i);
-      }
+    for (int l=0; l<NUM_LEDS; l++){
+      int r = msg.getInt(0);
+      int g = msg.getInt(1);
+      int b = msg.getInt(2);
+      leds[strip][l].setRGB(r, g, b);
     }
+    FastLED.show();
+  }
+}
+
+// Function for setting led color in groups based on
+// length of incoming osc-message.
+// Sending groups of R G B R G B etc will spread the color
+// over the total size of the ledstrip
+template <int strip> void ledStripRGB(OSCMessage &msg){
+  // the size of the message (should be R G B R G B R G B etc.)
+  int size = msg.size();
+  // the pixel groupsize based on the total amount divided by size divided by 3
+  float groupSize = NUM_LEDS / int(min(size, NUM_LEDS * 3) / 3);
+  // go over all the LEDs and adjust the color based on the group
+  for (int l=0; l<NUM_LEDS; l++){
+    int offset = int(l / groupSize);
+    int r = msg.getInt(0 + offset * 3);
+    int g = msg.getInt(1 + offset * 3);
+    int b = msg.getInt(2 + offset * 3);
+    leds[strip][l].setRGB(r, g, b);
   }
   FastLED.show();
 }
 
-// Callback method for blackout of a whole strip
+// Function for blackout of a whole strip
 template <int strip> void ledStripBlack(OSCMessage &msg){
   for (int l=0; l<NUM_LEDS; l++){
     leds[strip][l] = CRGB::Black;
   }
   FastLED.show();
+}
+
+// Function for controlling white brightness of a whole strip
+template <int strip> void ledStripWhite(OSCMessage &msg){
+  if (msg.isInt(0)){
+    for (int l=0; l<NUM_LEDS; l++){
+      int v = msg.getInt(0);
+      leds[strip][l].setRGB(v, v, v);
+    }
+    FastLED.show();
+  }
 }
