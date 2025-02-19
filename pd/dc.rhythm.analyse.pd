@@ -29,12 +29,12 @@
 #X obj 464 109 loadbang;
 #X obj 583 190 inlet (number) subdivision quantization for pattern detection (default = 16), f 34;
 #N canvas 733 172 450 300 fill-array-0 0;
-#X obj 594 573 uzi;
-#X msg 596 601 0;
-#X obj 594 629 zl.group;
-#X text 632 601 init with empty array;
-#X obj 434 537 inlet;
-#X obj 316 658 outlet;
+#X obj 59 106 uzi;
+#X msg 61 134 0;
+#X obj 59 162 zl.group;
+#X text 97 134 init with empty array;
+#X obj 59 58 inlet;
+#X obj 59 215 outlet;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 1 0 2 0;

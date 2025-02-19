@@ -50,7 +50,7 @@ IPAddress ip(169, 254, 241, 145);
 unsigned int port = 9090;
 
 // this is maybe not needed?
-// char packetBuffer[UDP_TX_PACKET_MAX_SIZE]; 
+// char packetBuffer[UDP_TX_PACKET_MAX_SIZE];
 
 // How many leds are in the strips
 #define NUM_LEDS 60
