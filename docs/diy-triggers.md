@@ -27,9 +27,9 @@ Make sure you've bought the following materials to make your trigger with. I rec
 - [Balanced cable](https://www.thomann.de/intl/sommer_cable_sc_stage_22_highflex_sw.htm)
 - [Plastidip](https://shop.plastidip.com/products/plasti-dip-can?variant=49236227129646) (optionally, for coating purposes)
 
-<img src='./images/diy-piezo/0_piezo-jack.jpg' alt='A piezo disc and a jack socket' width='30%' />
+<img src='./images/diy-piezo/0_piezo-jack.jpg' alt='A piezo disc and a jack socket' width='50%' />
 
-<img src='./images/diy-piezo/1_cable.jpg' alt='A standard microphone cable' width='30%' />
+<img src='./images/diy-piezo/1_cable.jpg' alt='A standard microphone cable' width='50%' />
 
 ## Gathering the tools
 
@@ -44,25 +44,25 @@ The tools you will need are:
 - [Audio Interface](https://www.thomann.de/intl/focusrite_scarlett_solo_3rd_gen.htm) for testing the trigger
 
 <!-- ![Soldering iron, soldering wire, wire cutter, wire stripper tools](./images/diy-piezo/2_tools.jpg) -->
-<img src='./images/diy-piezo/2_tools.jpg' alt='Soldering iron, soldering wire, wire cutter, wire stripper tools' width='33%' />
+<img src='./images/diy-piezo/2_tools.jpg' alt='Soldering iron, soldering wire, wire cutter, wire stripper tools' width='50%' />
 
 ## Stripping the cable
 
 Cut a part of the cable to the desired length. I will use about 30cm.
 
-<img src='./images/diy-piezo/3_cut-cable.jpg' alt='A piece of 30cm xlr cable' width='33%' />
+<img src='./images/diy-piezo/3_cut-cable.jpg' alt='A piece of 30cm xlr cable' width='50%' />
 
 Strip the outer jacket from the cable to reveal the inner shielding and wires. Do this on both sides (on side will be for the socket, the other side the piezo).
 
-<img src='./images/diy-piezo/4_strip-cable.jpg' alt='Outer jacket stripped of the cable' width='33%' />
+<img src='./images/diy-piezo/4_strip-cable.jpg' alt='Outer jacket stripped of the cable' width='50%' />
 
 If you have an XLR cable, cut away the shielding and filler, otherwise only cut away the filler.
 
-<img src='./images/diy-piezo/5_strip-cable.jpg' alt='Shielding and filler cut off' width='33%' />
+<img src='./images/diy-piezo/5_strip-cable.jpg' alt='Shielding and filler cut off' width='50%' />
 
 Now strip the insulation of the inner 2 wires to reveal the conductors.
 
-<img src='./images/diy-piezo/6_strip-cable.jpg' alt='Insulation stripped from inner wires' width='33%' />
+<img src='./images/diy-piezo/6_strip-cable.jpg' alt='Insulation stripped from inner wires' width='50%' />
 
 ## Pre-soldering
 
@@ -70,29 +70,29 @@ Turn on your soldering iron and wait till it became hot enough for soldering. In
 
 Make sure you check if your jack socket is a balanced (Tip, Ring, Sleeve) or unbalanced (Tip, Sleeve) socket. In both cases you want to only solder the *Tip* and the *Sleeve*. The tip is the **signal** (**+** or **hot**), the sleeve is **Ground** (**GND**), the ring is *unused*. My socket below is a TRS socket, and you can see one connection is slightly darker orange/brown colored, this is the ring. Sometimes the connection for the ring is slightly longer than the tip. The longest bottom part is in most cases the sleeve.
 
-<img src='./images/diy-piezo/7_jack-socket.jpg' alt='Jack socket open' width='33%' />
+<img src='./images/diy-piezo/7_jack-socket.jpg' alt='Jack socket open' width='50%' />
 
 Now use a little bit of soldering wire to place some solder on the conductors of the cable and on the sleeve and tip of the socket.
 
-<img src='./images/diy-piezo/8_pre-solder.jpg' alt='Pre-soldered connectors' width='33%' />
+<img src='./images/diy-piezo/8_pre-solder.jpg' alt='Pre-soldered connectors' width='50%' />
 
 ## Soldering the cable
 
 Before you solder the cable to the jack socket and the piezo, make sure you add the screw cap, spring and plastic shield to the cable *in the correct order*.
 
-<img src='./images/diy-piezo/9_prepare-cable.jpg' alt='Prepare cable for soldering' width='33%' />
+<img src='./images/diy-piezo/9_prepare-cable.jpg' alt='Prepare cable for soldering' width='50%' />
 
 Now solder the wires of the cable to the socket. In general it makes sense to use the *blue* wire for *ground* and the *red* wire for the *+ signal*.
 
-<img src='./images/diy-piezo/10_soldered-socket.jpg' alt='Cable soldered to jack' width='33%' />
+<img src='./images/diy-piezo/10_soldered-socket.jpg' alt='Cable soldered to jack' width='50%' />
 
 Then solder the wires of the other side of the cable to the piezo disc. For this you solder the *blue*/*ground* wire to the outer disc, and you solder the *red*/*+* wire to the ceramic part (inner disc). If you have a piezo with a feedback terminal then you can choose the terminal instead.
 
-<img src='./images/diy-piezo/11_soldered-piezo.jpg' alt='Cable soldered to piezo' width='33%' />
+<img src='./images/diy-piezo/11_soldered-piezo.jpg' alt='Cable soldered to piezo' width='50%' />
 
 When the solder is cooled of and everything is connected properly you can screw the jack socket closed and the result should look something like this:
 
-<img src='./images/diy-piezo/12_finished-trigger.jpg' alt='Finished trigger' width='33%' />
+<img src='./images/diy-piezo/12_finished-trigger.jpg' alt='Finished trigger' width='50%' />
 
 Now it's time to test the trigger!
 
@@ -100,9 +100,9 @@ Now it's time to test the trigger!
 
 Use a jack-jack cable and an external audio interface to connect your trigger and test if the signal is coming in. Here I'm using a Motu M4, but any interface with a guitar jack input (sometimes refered to as Hi-Z) will be fine! If you have an interface with only XLR inputs, then use a jack-xlr cable to be able to connect.
 
-<img src='./images/diy-piezo/13_audio-interface.jpg' alt='Motu M4 Audio Interface' width='33%' />
+<img src='./images/diy-piezo/13_audio-interface.jpg' alt='Motu M4 Audio Interface' width='50%' />
 
-<img src='./images/diy-piezo/14_jack-cable.jpg' alt='Jack to jack cable' width='33%' />
+<img src='./images/diy-piezo/14_jack-cable.jpg' alt='Jack to jack cable' width='50%' />
 
 Apply a little gain to the input and then tap the trigger with your finger to see if the signal comes through. If all went well this should be the case. If not, you will have to trace the issue. For this a [multimeter](https://www.tinytronics.nl/en/tools-and-mounting/measuring/multimeters/velleman-dvm010-digital-multimeter) can be very helpful! With the multimeter you can test the cable and soldered connections for *continuity* (is a current passing through the cable and connection properly).
 
@@ -112,6 +112,14 @@ If you want the piezo to be a bit less fragile, you can coat it in plastidip. Th
 
 Gently dip the trigger past the piezo up till about 1 or 2 cm of the cable in the plastidip. Then let it hang to dry. Put some cardboard below it to catch any dripping plastidip. You can repeat this process a few times after a couple hours of drying to add a few more layers. The final result will look something like this:
 
-<img src='./images/diy-piezo/16_plastidip.jpg' alt='Plastidip applied to trigger' width='33%' />
+<img src='./images/diy-piezo/16_plastidip.jpg' alt='Plastidip applied to trigger' width='50%' />
 
-<img src='./images/diy-piezo/17_multiple-triggers.jpg' alt='A few finished triggers after drying' width='33%' />
+<img src='./images/diy-piezo/17_multiple-triggers.jpg' alt='A few finished triggers after drying' width='50%' />
+
+## Sources
+
+For this guide I've used the following sources:
+
+- [Make a contact microphone - by Backbeats](https://www.instructables.com/Make-a-Contact-Microphone/)
+- [How do piezos work? - by Open Music Labs](http://www.openmusiclabs.com/learning/sensors/piezos/)
+- [Building your own piezo pre-amp - by Center for Haptic Audio Interaction Research](https://www.chair.audio/diy-piezo-preamp/)
