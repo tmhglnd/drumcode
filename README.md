@@ -109,6 +109,8 @@ For this project I've found inspiration in many different places, such as from d
 	- Machine Learning/Listening, Software Library
 - [Jojo Mayer - Nerve](https://www.youtube.com/watch?v=SIahbUYxdfE) 
 	- Drums, Electronics, Live Band
+- [Jojo Mayer - Me/Machine](https://www.youtube.com/watch?v=WJVPCKzUKF0)
+	- Drums, Electronics
 - [Yaxu & Rephlex - Canute](https://www.youtube.com/watch?v=uAq4BAbvRS4) 
 	- Electronic Drums, Live Coding
 - [Graham Dunning - Mechanical Techno](https://www.youtube.com/watch?v=HG8qR75R-as) 
