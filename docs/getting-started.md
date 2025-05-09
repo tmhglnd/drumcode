@@ -30,9 +30,10 @@ Depending on the trigger you have, follow the instructions of the manufacturer t
 
 In order to receive the signal from the contact microphone in the computer we need an external USB soundcard with at least one 1/4" Jack input (sometimes called Hi-Z or Instrument input). Soundcards come in many shapes and price ranges. Depending on the amount of triggers you have you may need a bigger soundcard. Below is a list of some decent soundcards to get started with in the range of €50 - 150:
 
-- [M-audio M-track Duo](https://www.thomann.de/nl/m_audio_m_track_duo.htm)
+- [Swissonic Audio 2](https://www.thomann.de/intl/swissonic_audio_2.htm)
 - [Presonus Studio 24c](https://www.thomann.de/nl/presonus_studio_24c.htm)
-- [Behringer UMC404](https://www.thomann.de/nl/social_70th-anniversary.html)
+- [Behringer UMC204](https://www.thomann.de/intl/behringer_u_phoria_umc204hd.htm)
+<!-- - [M-audio M-track Duo](https://www.thomann.de/nl/m_audio_m_track_duo.htm) -->
 
 ### 2. Connect the trigger
 
@@ -155,7 +156,7 @@ If we want to hear the sound from the synth we need to send it to the speakers. 
 
 ### 4. A volume slider
 
-Create a `[gain~]` slider. You can now connect the output of the synth to the gain slider input. And connect the gain slider output to the Left and Right inputs from the `[dac~]`. 
+Create a `[dc.gain~]` slider. You can now connect the output of the synth to the gain slider input. And connect the gain slider output to the Left and Right inputs from the `[dac~]`. 
 
 Now you have to "Lock" the patch and put it in Run Mode by clicking the pencil icon with the stripe through on the top.
 
