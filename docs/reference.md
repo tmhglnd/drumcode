@@ -466,6 +466,8 @@ Use the following objects if you want to create some sound directly in PureData 
 
 A simple polyphonic synth beep made from a sinewave with some distortion. Useful to quickly create a sound to test if a patch is working, to create a clicktrack to play along with, or to actually use for musical purposes of course!
 
+You can also use: `dc.synth.saw~` and `dc.synth.square~` for other oscillator waveforms.
+
 inlets:
 1. (trigger/number) MIDI note pitch triggers the note 0-127 (default = 60)
 2. (number) velocity/volume 1-127 (default = 127)
@@ -585,6 +587,15 @@ inlets:
 arguments:
 - (number) filter cutoff 0-127 (default = 70)
 - (number) filter resonance 0-127 (default = 40)
+
+### `dc.fx.looper~`
+
+A basic looper effect. Input a signal and start the looping recording with a toggle (`[tgl]`). The looper waits till it receives a sound that has some significant volume and starts the recording. This helps to get a better looping result. Then clicking the toggle "off" the loop immediately starts playing. You can start/stop the looper also with a message.
+
+inlets:
+1. (signal) sound to be recorded for looping
+2. (number) start/stop recording loop
+3. (number) start/stop looping the sound
 
 ### `dc.fx.reverb~`
 

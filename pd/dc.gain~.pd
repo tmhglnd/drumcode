@@ -21,6 +21,8 @@
 #X obj 105 87 inlet~ (signal) right signal;
 #X obj 58 540 outlet~ (signal) left gained signal;
 #X obj 105 570 outlet~ (signal) right gained signal;
+#X obj 59 419 hip~ 10;
+#X obj 105 448 hip~ 10;
 #X connect 0 0 20 0;
 #X connect 1 0 21 0;
 #X connect 2 0 1 1;
@@ -33,6 +35,8 @@
 #X connect 8 0 3 0;
 #X connect 8 1 6 0;
 #X connect 9 0 2 0;
-#X connect 18 0 0 0;
-#X connect 19 0 1 0;
+#X connect 18 0 22 0;
+#X connect 19 0 23 0;
+#X connect 22 0 0 0;
+#X connect 23 0 1 0;
 #X coords 0 0 1 1 56 134 2 164 132;

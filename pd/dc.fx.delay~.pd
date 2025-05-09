@@ -27,7 +27,7 @@
 #X obj 554 329 float2sig~ 25;
 #X obj 239 199 float2sig~ 100;
 #X obj 379 369 float2sig~ 25;
-#X obj 59 319 hip~ 100;
+#X obj 59 319 hip~ 50;
 #X connect 0 0 2 0;
 #X connect 1 0 16 0;
 #X connect 2 0 7 0;
