@@ -1,26 +1,26 @@
 # Build your own drum triggers
 
-The most basic way of creating a trigger is by using a contact microphone (also called a piezo disc, or piezo buzzer). The is a little metal disc with a ceramic top layer, that, when slightly bended continuously, outputs a small alternating voltage for the difference. This voltage can be captured by an external soundcard (or audio interface) and used as an audio signal to listen to. Many of the consumer grade triggers (like for instance the ddrum triggers) use this piezo disc as the technology behind their trigger.
+The most basic way of creating a trigger is by using a contact microphone (also called a piezo disc, or piezo buzzer). This is a little metal disc with a ceramic top layer, that, when slightly bended continuously, outputs a small alternating voltage based on the variation in bending. This voltage can be captured by an external soundcard (or audio interface) and used as an audio signal to listen to. Many of the consumer grade triggers (like for instance the ddrum triggers) use this piezo disc as the technology behind their trigger.
 
 You can buy these piezo discs for less than €1 per piece. And since we are mainly interested in using the signal as a trigger (not for recording studio quality sounds) it is also not too important what the soundquality of the piezo is, just as long as a clear signal can come through.
 
-In order to build your own triggers you will need to buy some additional things such as a cable, a jack (socket or plug) and possibly some tools for soldering, stripping the cable and so on. Below is a list of materials needed with an example link, but depending on your location it can also be bought in a local store or different webstore.
-
-A piezo disc is usually "unbalanced", meaning it has only a + signal and a ground. Therefore we only need a TS Jack Socket or Plug (T = Tip, S = Sleeve). A cable that has 2 wires is therefore sufficient. A microphone cable or guitar cable can both be used for this. A microphone cable has 2 wires and a shielding, in that case you can use both the center wires. A guitar cable has 1 wire and a shielding, in this case you will need to use the shielding. There are some piezo discs that have a 3rd part (like the one in my image below), this is called a feedback terminal. This is used if you want to create a speaker out of the piezo. But it is fine to use this piezo also for a trigger.
+A piezo disc is usually "unbalanced", meaning it has only a + signal and a ground. Therefore we only need a TS Jack Socket or Plug (T = Tip, S = Sleeve). A cable that has 2 wires is therefore sufficient. A microphone cable or guitar cable can both be used for this. A microphone cable has 2 wires and a shielding, in that case you can use both the center wires. A guitar cable has 1 wire and a shielding, in this case you will need to use the shielding for the ground. There are some piezo discs that have a 3rd part (like the one in my image below), this is called a feedback terminal. This is used if you want to create a speaker out of the piezo, but it is also perfectly fine to use this piezo for a trigger.
 
 ## Table of content
 
-- [Gathering the materials](#gathering-the-materials)
-- [Gathering the tools](#gathering-the-tools)
-- [Stripping the cable](#stripping-the-cable)
-- [Pre-soldering](#pre-soldering)
-- [Soldering the cable](#soldering-the-cable)
-- [Testing the piezo](#testing-the-piezo)
-- [Coating the trigger](#coating-the-trigger)
+- [Chapter 1: Gathering the materials](#gathering-the-materials)
+- [Chapter 2: Gathering the tools](#gathering-the-tools)
+- [Chapter 3: Stripping the cable](#stripping-the-cable)
+- [Chapter 4: Pre-soldering](#pre-soldering)
+- [Chapter 5: Soldering the cable](#soldering-the-cable)
+- [Chapter 6: Testing the piezo](#testing-the-piezo)
+- [Chapter 7: Coating the trigger](#coating-the-trigger)
 
 ## Gathering the materials
 
-Make sure you've bought the following materials to make your trigger with. I recommend to buy a bit more of everything then needed, just in case something goes wrong during soldering. And if everything goes well you can make a few more of course!
+In order to build your own triggers you will need to buy some additional things such as a cable, a jack (socket or plug) and possibly some tools for soldering, stripping the cable and so on. 
+
+Make sure you've bought the following materials to make your trigger with. I recommend to buy a bit more of everything then needed, just in case something goes wrong during soldering. Or if everything goes well you can make a few more of course! Below is a list of materials needed with an example link, but depending on your location it can be good to first search for a local store or different webstore to safe some delivery costs and time.
 
 - [Piezo disc](https://www.tinytronics.nl/en/audio/speakers/buzzers/piezo-electronic-buzzer-20mm) 
 - [1/4" T(R)S Jack Socket](https://www.thomann.de/intl/thomann_sk096_klinkenkupplung.htm)
@@ -52,7 +52,7 @@ Cut a part of the cable to the desired length. I will use about 30cm.
 
 <img src='./images/diy-piezo/3_cut-cable.jpg' alt='A piece of 30cm xlr cable' width='50%' />
 
-Strip the outer jacket from the cable to reveal the inner shielding and wires. Do this on both sides (on side will be for the socket, the other side the piezo).
+Strip the outer jacket from the cable to reveal the inner shielding and wires. Do this on both sides (one side will be for the socket, the other side the piezo).
 
 <img src='./images/diy-piezo/4_strip-cable.jpg' alt='Outer jacket stripped of the cable' width='50%' />
 
