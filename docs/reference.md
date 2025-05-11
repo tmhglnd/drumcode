@@ -625,28 +625,16 @@ arguments:
 
 There are many objects already in PlugData (and PureData) by default. Either by being part of the default application, or via some other libraries such as Cyclone and ELSE. These objects can be very useful as well when patching on projects with drumcode. Some of these objects are already in use throughout the examples and templates. These objects are listed below:
 
-### `adc~` & `dac~`
-
-### `meter~` & `scope~`
-
-### `gain~` & `gain2~`
-
-### button `bng` (b) & toggle `tgl` (t)
-
-### `hslider` & `vslider`
-
-### `+`, `-`, `*`, `/`
-
-### number `floatbox` (f)/(i)
-
-### message `msg` (m)
-
-### `scale`
-
-### `select`
-
-### `counter`
-
-### `gate`
-
-### `switch`
+- `adc~` & `dac~`
+- `meter~` & `scope~`
+- `gain~` & `gain2~`
+- button `bng` (b) & toggle `tgl` (t)
+- `hslider` & `vslider`
+- `+`, `-`, `*`, `/`
+- number `floatbox` (f)/(i)
+- message `msg` (m)
+- `scale`
+- `select`
+- `counter`
+- `gate`
+- `switch`
