@@ -538,6 +538,15 @@ inlets:
 arguments:
 - (number) fade time in milliseconds (default = 25)
 
+### `dc.record~`
+
+A simple stereo recorder for quickly recording some sounds from your patch to the harddrive. Use a toggle to open a file and start the recording, then toggle off to stop the recording. When prompted for a filename, type the full name including your desired extension (for instance `.wav` or `.aiff`). Files are recorded at the selected samplerate (via PlugData preferences) and 16-bit sample depth. Files are recorded in stereo, to record mono simply connect the sound to both inputs.
+
+inlets:
+1. (signal) left signal to record
+2. (signal) right signal to record
+3. (toggle) start/stop the recording
+
 ### `dc.fx.delay~`
 
 A delay effect in an "analog tape style" consisting of a delaytime, feedback amount and a damping filter. All the parameters range from 0-127 for ease of use with MIDI values.
