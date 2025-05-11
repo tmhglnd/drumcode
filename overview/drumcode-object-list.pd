@@ -34,7 +34,7 @@
 #X obj 831 349 dc.fx.delay~;
 #X obj 831 408 dc.fx.distort~;
 #X obj 831 439 dc.fx.filter~;
-#X obj 831 470 dc.fx.reverb~;
+#X obj 831 502 dc.fx.reverb~;
 #X text 38 276 Audio Analysis, f 8;
 #X text 187 261 Tempo \, Timing \, Density, f 8;
 #X text 351 291 Utilities;
@@ -57,9 +57,12 @@
 #X obj 351 567 dc.peak~;
 #X obj 831 320 dc.fx.drywet~;
 #X obj 709 492 dc.gain~;
+#A saved 0;
 #X text 709 470 [dc.gain~];
 #X obj 709 441 dc.fade~;
 #X obj 468 441 dc.choose;
 #X obj 187 502 dc.rhythm.analyse;
 #X obj 187 533 dc.rhythm.match;
+#X obj 831 471 dc.fx.looper~;
+#X obj 709 641 dc.record~;
 #X connect 43 0 42 0;
