@@ -10,7 +10,7 @@
 // ESP32 data pin (1) to yellow wire with 470ohm resistor close to led ring
 
 // How many leds are in the ring
-#define NUM_LEDS 16
+#define NUM_LEDS 60
 // What pin is connected to the data cable
 #define RING 1
 
@@ -33,7 +33,7 @@ void loop() {
   // create a hue rotation of the color over all the LEDs
   // based on milliseconds
   for (int l = 0; l < NUM_LEDS; l++){
-    leds[l] = CHSV(millis() / 5, 255, 255);
+    leds[l] = CHSV(millis() / 36, 255, 255);
   }
   FastLED.show();
 
