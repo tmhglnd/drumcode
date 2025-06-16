@@ -57,9 +57,9 @@ unsigned int port = 9090;
 // How many strips
 #define NUM_STRIPS 3
 // What pins are connected to the data cables
-#define STRIP_1 3
+#define STRIP_1 2
 #define STRIP_2 4
-#define STRIP_3 5
+#define STRIP_3 6
 
 // create NUM_LEDS with RGB color coding in a 2D array
 CRGB leds[NUM_STRIPS][NUM_LEDS];
@@ -79,6 +79,14 @@ void setup() {
   FastLED.addLeds<NEOPIXEL, STRIP_2>(leds[1], NUM_LEDS);
   FastLED.addLeds<NEOPIXEL, STRIP_3>(leds[2], NUM_LEDS);
   Serial.println("LEDs added to FastLED");
+
+  // Initialize all leds black
+  for (int s=0; s<NUM_STRIPS; s++){
+    for (int l=0; l<NUM_LEDS; l++){
+      leds[s][l] = CRGB::Black;
+    }
+  }
+  FastLED.show();
 }
 
 void loop() {
