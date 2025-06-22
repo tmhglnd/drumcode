@@ -93,7 +93,7 @@ void loop() {
   oscMessageReceiver();
   // short delay to reduce cpu
   // or this can result in missed messages?
-  // delay(1);
+  delayMicroseconds(1);
 }
 
 // A function handling incoming osc messages
