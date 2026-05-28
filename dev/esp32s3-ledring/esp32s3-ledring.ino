@@ -46,11 +46,15 @@ int programCount = 0;
 int numPrograms = 4;
 int btnState = LOW;
 int _btnState = LOW;
+int dim = 8;
 
 // various scenes based on 2 colors { r, g, b, r2, g2, b2 }
-int scene1[] = { 255, 255, 255, 20, 20, 20 };
-int scene2[] = { 0, 255, 66, 0, 98, 255 };
-int scene3[] = { 255, 26, 29, 193, 27, 242 };
+// int scene1[] = { 255, 255, 255, 20, 20, 20 };
+int scene1[] = { 180, 35, 150, 130, 0, 255 };
+// int scene2[] = { 0, 255, 66, 0, 98, 255 };
+int scene2[] = { 255, 255, 0, 0, 255, 0 };
+// int scene3[] = { 255, 26, 29, 193, 27, 242 };
+int scene3[] = { 255, 100, 0, 0, 100, 255 };
 
 void loop() {
   // current reading from digital pin
@@ -86,15 +90,15 @@ void loop() {
 
   // for all the colors 
   else if (programCount == 1){
-    lightProgram(scene1, 105);
+    lightProgram(scene1, 160);
   }
 
   else if (programCount == 2){
-    lightProgram(scene2, 126);
+    lightProgram(scene2, 160);
   }
 
   else if (programCount == 3){
-    lightProgram(scene3, 134);
+    lightProgram(scene3, 160);
   }
 
   // create a hue rotation of the color over all the LEDs based on milliseconds
@@ -113,7 +117,7 @@ void loop() {
 
 // run light program interpolating between 2 colors over 1 bar at given bpm
 void lightProgram(int scene[], float bpm){
-  float t = millis() / (240000 * 4 / bpm);
+  float t = millis() / (240000 * 2 / bpm);
   // calculate interpolation factor for crossfade between 2 colors
   float i = cos(t * TWO_PI) * 0.5 + 0.5;
 
@@ -122,7 +126,7 @@ void lightProgram(int scene[], float bpm){
     int color = scene[c] * (1 - i) + scene[c+3] * i;
     // set the calculated color for all LEDs
     for (int l = 0; l < NUM_LEDS; l++){
-      leds[l][c] = color;
+      leds[l][c] = color / dim;
     }
   }
 }
